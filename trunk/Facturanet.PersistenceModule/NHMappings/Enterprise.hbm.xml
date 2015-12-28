@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Facturanet.Core" namespace="Facturanet.Entities">
+  <class name="Enterprise">
+    <id name="Id" type="Guid">
+      <generator class="assigned"/>
+    </id>
+    <version name="Version" unsaved-value="0"/>
+    <property name="Code" />
+    <property name="Active" />
+    <property name="Name" />
+  </class>
+</hibernate-mapping>

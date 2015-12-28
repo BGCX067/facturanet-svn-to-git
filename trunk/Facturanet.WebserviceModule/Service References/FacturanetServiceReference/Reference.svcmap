@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9f715105-da65-4935-91c0-7f036034635c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8731/Design_Time_Addresses/Facturanet/Webservice/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="625cc6b2-13e9-47e1-a74e-f943d28c7b82" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Facturanet/Webservice/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="f3e8b7f7-9c8f-4c8a-9e4e-432deff0d790" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Facturanet/Webservice/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="f3329f60-9753-4b9b-a884-4640b4b58a57" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Facturanet/Webservice/mex" />
+    <MetadataFile FileName="Facturanet.Server.xsd" MetadataType="Schema" ID="0645f7a8-6545-46f2-8f44-6dcda15d0641" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Facturanet/Webservice/mex" />
+    <MetadataFile FileName="Facturanet.Infrastructure.xsd" MetadataType="Schema" ID="6544aa12-270b-4701-b82c-b7fdc0bea82e" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Facturanet/Webservice/mex" />
+    <MetadataFile FileName="Facturanet.Business.xsd" MetadataType="Schema" ID="d226f3b3-26ec-42a9-b0cb-67285b13f070" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Facturanet/Webservice/mex" />
+    <MetadataFile FileName="Facturanet.Test.xsd" MetadataType="Schema" ID="c46ed292-6f66-47d1-971a-404ce62cd218" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Facturanet/Webservice/mex" />
+    <MetadataFile FileName="Facturanet.Entities.xsd" MetadataType="Schema" ID="6258b330-005b-4310-ae4a-b08228c2e951" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Facturanet/Webservice/mex" />
+    <MetadataFile FileName="Facturanet.Tdo.xsd" MetadataType="Schema" ID="7c19ecb8-12f2-41de-aba2-35ea3f2bbf9f" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Facturanet/Webservice/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="0793d4cb-0d9c-4dd4-b089-88c7b8760436" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/Facturanet/Webservice/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <query name="InvoicesList" read-only="true">
+    <![CDATA[
+    select 
+      invoice
+    from 
+      Invoice invoice
+      join invoice.Items
+      join invoice.Enterprise
+      join invoice.Customer
+    ]]>
+  </query>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Facturanet.Infrastructure" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Facturanet.Infrastructure" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Facturanet.Server" />
+  <xs:complexType name="SystemInfoRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Facturanet.Server" base="q1:BaseRequestOfSystemInfoResponseIi_PU1i7e">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SystemInfoRequest" nillable="true" type="tns:SystemInfoRequest" />
+  <xs:complexType name="SystemInfoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Facturanet.Server" base="q2:Response">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DriverName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DriverVersion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServerVersion" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SystemInfoResponse" nillable="true" type="tns:SystemInfoResponse" />
+</xs:schema>

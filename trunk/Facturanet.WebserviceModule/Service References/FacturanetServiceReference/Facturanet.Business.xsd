@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Facturanet.Business" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Facturanet.Business" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Facturanet.Server" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Facturanet.Entities" />
+  <xs:complexType name="ListProductsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Facturanet.Server" base="q1:BaseRequestOfListProductsResponsel0JvM9sf">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListProductsRequest" nillable="true" type="tns:ListProductsRequest" />
+  <xs:complexType name="ListCustomersRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Facturanet.Server" base="q2:BaseRequestOfListCustomersResponsel0JvM9sf">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListCustomersRequest" nillable="true" type="tns:ListCustomersRequest" />
+  <xs:complexType name="ListInvoicesRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Facturanet.Server" base="q3:BaseRequestOfListInvoicesResponsel0JvM9sf">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListInvoicesRequest" nillable="true" type="tns:ListInvoicesRequest" />
+  <xs:complexType name="ListAccountTreesRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Facturanet.Server" base="q4:BaseRequestOfListAccountTreesResponsel0JvM9sf">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListAccountTreesRequest" nillable="true" type="tns:ListAccountTreesRequest" />
+  <xs:complexType name="CreateAccountTreeRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Facturanet.Server" base="q5:BaseRequestOfEmptyResponse30VHCHZM">
+        <xs:sequence>
+          <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Facturanet.Entities" minOccurs="0" name="AccountTree" nillable="true" type="q6:AccountTree" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CreateAccountTreeRequest" nillable="true" type="tns:CreateAccountTreeRequest" />
+  <xs:complexType name="ListCustomersResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/Facturanet.Server" base="q7:ListResponseOfanyType">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListCustomersResponse" nillable="true" type="tns:ListCustomersResponse" />
+  <xs:complexType name="ListInvoicesResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/Facturanet.Server" base="q8:ListResponseOfanyType">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListInvoicesResponse" nillable="true" type="tns:ListInvoicesResponse" />
+  <xs:complexType name="ListProductsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/Facturanet.Server" base="q9:ListResponseOfanyType">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListProductsResponse" nillable="true" type="tns:ListProductsResponse" />
+  <xs:complexType name="ListAccountTreesResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/Facturanet.Server" base="q10:ListResponseOfanyType">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListAccountTreesResponse" nillable="true" type="tns:ListAccountTreesResponse" />
+</xs:schema>

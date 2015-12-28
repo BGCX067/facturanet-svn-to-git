@@ -1,0 +1,3469 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>/archivos/Proyectos/lib/MySql.Data-connector-net-5.2.2/../MySql.Data</name>
+    </assembly>
+    <members>
+        <member name="T:MySql.Data.MySqlClient.CharSetMap">
+            <summary>
+            Summary description for CharSetMap.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.CharSetMap.GetEncoding(MySql.Data.Common.DBVersion,System.String)">
+            <summary>
+            Returns the text encoding for a given MySQL character set name
+            </summary>
+            <param name="version">Version of the connection requesting the encoding</param>
+            <param name="CharSetName">Name of the character set to get the encoding for</param>
+            <returns>Encoding object for the given character set name</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.CharSetMap.InitializeMapping">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlCommand">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/ClassSummary/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.#ctor">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/ctor1/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.#ctor(System.String)">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/ctor2/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.#ctor(System.String,MySql.Data.MySqlClient.MySqlConnection)">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/ctor3/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.#ctor(System.String,MySql.Data.MySqlClient.MySqlConnection,MySql.Data.MySqlClient.MySqlTransaction)">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/ctor4/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlCommand.LastInsertedId">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/LastInseredId/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlCommand.CommandText">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/CommandText/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlCommand.CommandTimeout">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/CommandTimeout/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlCommand.CommandType">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/CommandType/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlCommand.IsPrepared">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/IsPrepared/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlCommand.Connection">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/Connection/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlCommand.Parameters">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/Parameters/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlCommand.Transaction">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/Transaction/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlCommand.DesignTimeVisible">
+            <summary>
+            Gets or sets a value indicating whether the command object should be visible in a Windows Form Designer control.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlCommand.UpdatedRowSource">
+            <summary>
+            Gets or sets how command results are applied to the DataRow when used by the
+            Update method of the DbDataAdapter.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.ICloneable.Clone">
+            <summary>
+            Creates a clone of this MySqlCommand object.  CommandText, Connection, and Transaction properties
+            are included as well as the entire parameter list.
+            </summary>
+            <returns>The cloned MySqlCommand object</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.Cancel">
+            <summary>
+            Attempts to cancel the execution of a MySqlCommand.
+            </summary>
+            <remarks>
+            Cancelling a currently active query only works with MySQL versions 5.0.0 and higher.
+            </remarks>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.CreateParameter">
+            <summary>
+            Creates a new instance of a <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object.
+            </summary>
+            <remarks>
+            This method is a strongly-typed version of <see cref="M:System.Data.IDbCommand.CreateParameter" />.
+            </remarks>
+            <returns>A <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.CheckState">
+            <summary>
+            Check the connection to make sure
+            		- it is open
+            		- it is not currently being used by a reader
+            		- and we have the right version of MySQL for the requested command type
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/ExecuteNonQuery/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.ExecuteReader">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/ExecuteReader/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(System.Data.CommandBehavior)">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/ExecuteReader1/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/ExecuteScalar/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.Prepare(System.Int32)">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/Prepare2/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.Prepare">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommand.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommand.xml" path="docs/Prepare/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.BeginExecuteReader">
+            <summary>
+            Initiates the asynchronous execution of the SQL statement or stored procedure
+            that is described by this <see cref="T:MySql.Data.MySqlClient.MySqlCommand" />, and retrieves one or more
+            result sets from the server.
+            </summary>
+            <returns>An <see cref="T:System.IAsyncResult" /> that can be used to poll, wait for results,
+            or both; this value is also needed when invoking EndExecuteReader,
+            which returns a <see cref="T:MySql.Data.MySqlClient.MySqlDataReader" /> instance that can be used to retrieve
+            the returned rows. </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.BeginExecuteReader(System.Data.CommandBehavior)">
+            <summary>
+            Initiates the asynchronous execution of the SQL statement or stored procedure
+            that is described by this <see cref="T:MySql.Data.MySqlClient.MySqlCommand" /> using one of the
+            <b>CommandBehavior</b> values.
+            </summary>
+            <param name="behavior">One of the <see cref="T:System.Data.CommandBehavior" /> values, indicating
+            options for statement execution and data retrieval.</param>
+            <returns>An <see cref="T:System.IAsyncResult" /> that can be used to poll, wait for results,
+            or both; this value is also needed when invoking EndExecuteReader,
+            which returns a <see cref="T:MySql.Data.MySqlClient.MySqlDataReader" /> instance that can be used to retrieve
+            the returned rows. </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.EndExecuteReader(System.IAsyncResult)">
+            <summary>
+            Finishes asynchronous execution of a SQL statement, returning the requested
+            <see cref="T:MySql.Data.MySqlClient.MySqlDataReader" />.
+            </summary>
+            <param name="result">The <see cref="T:System.IAsyncResult" /> returned by the call to
+            <see cref="M:MySql.Data.MySqlClient.MySqlCommand.BeginExecuteReader" />.</param>
+            <returns>A <b>MySqlDataReader</b> object that can be used to retrieve the requested rows. </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.BeginExecuteNonQuery(System.AsyncCallback,System.Object)">
+            <summary>
+            Initiates the asynchronous execution of the SQL statement or stored procedure
+            that is described by this <see cref="T:MySql.Data.MySqlClient.MySqlCommand" />.
+            </summary>
+            <param name="callback">
+            An <see cref="T:System.AsyncCallback" /> delegate that is invoked when the command's
+            execution has completed. Pass a null reference (<b>Nothing</b> in Visual Basic)
+            to indicate that no callback is required.</param>
+            <param name="stateObject">A user-defined state object that is passed to the
+            callback procedure. Retrieve this object from within the callback procedure
+            using the <see cref="P:System.IAsyncResult.AsyncState" /> property.</param>
+            <returns>An <see cref="T:System.IAsyncResult" /> that can be used to poll or wait for results,
+            or both; this value is also needed when invoking <see cref="M:MySql.Data.MySqlClient.MySqlCommand.EndExecuteNonQuery(System.IAsyncResult)" />,
+            which returns the number of affected rows. </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.BeginExecuteNonQuery">
+            <summary>
+            Initiates the asynchronous execution of the SQL statement or stored procedure
+            that is described by this <see cref="T:MySql.Data.MySqlClient.MySqlCommand" />.
+            </summary>
+            <returns>An <see cref="T:System.IAsyncResult" /> that can be used to poll or wait for results,
+            or both; this value is also needed when invoking <see cref="M:MySql.Data.MySqlClient.MySqlCommand.EndExecuteNonQuery(System.IAsyncResult)" />,
+            which returns the number of affected rows. </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommand.EndExecuteNonQuery(System.IAsyncResult)">
+            <summary>
+            Finishes asynchronous execution of a SQL statement.
+            </summary>
+            <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> returned by the call
+            to <see cref="M:MySql.Data.MySqlClient.MySqlCommand.BeginExecuteNonQuery" />.</param>
+            <returns>
+            </returns>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlCommandBuilder">
+            <!-- Badly formed XML in at comment file `docs/MySqlCommandBuilder.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlCommandBuilder.xml" path="docs/class/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommandBuilder.#ctor">
+            <!-- Badly formed XML in at comment file `docs/MySqlCommandBuilder.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlCommandBuilder.xml" path="docs/Ctor/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommandBuilder.#ctor(MySql.Data.MySqlClient.MySqlDataAdapter)">
+            <!-- Badly formed XML in at comment file `docs/MySqlCommandBuilder.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlCommandBuilder.xml" path="docs/Ctor2/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlCommandBuilder.DataAdapter">
+            <!-- Badly formed XML in at comment file `docs/mysqlcommandBuilder.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/mysqlcommandBuilder.xml" path="docs/DataAdapter/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlCommandBuilder.ReturnGeneratedIdentifiers">
+            <summary>
+            Indicates whether the command builder should generate a SELECT statement
+            to populate any autogenerated fields.  We provide this property rather
+            than rely on the MySqlCommand.UpdatedRowSource property since a user should
+            still be able to write a custom insert command and not have our work interfere.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommandBuilder.DeriveParameters(MySql.Data.MySqlClient.MySqlCommand)">
+            <summary>
+            Retrieves parameter information from the stored procedure specified
+            in the MySqlCommand and populates the Parameters collection of the
+            specified MySqlCommand object.
+            This method is not currently supported since stored procedures are
+            not available in MySql.
+            </summary>
+            <param name="command">The MySqlCommand referencing the stored
+            procedure from which the parameter information is to be derived.
+            The derived parameters are added to the Parameters collection of the
+            MySqlCommand.</param>
+            <exception cref="T:System.InvalidOperationException">The command text is not
+            a valid stored procedure name.</exception>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommandBuilder.GetDeleteCommand">
+            <summary>
+            Gets the delete command.
+            </summary>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommandBuilder.GetUpdateCommand">
+            <summary>
+            Gets the update command.
+            </summary>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommandBuilder.GetInsertCommand">
+            <summary>
+            Gets the insert command.
+            </summary>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommandBuilder.RefreshSchema">
+            <!-- Badly formed XML in at comment file `docs/MySqlCommandBuilder.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlCommandBuilder.xml" path="docs/RefreshSchema/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommandBuilder.GetParameterName(System.String)">
+            <summary>
+            </summary>
+            <param name="parameterName">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlCommandBuilder.CreateFinalSelect">
+            <summary>
+            We only need to return the single auto generated column since the base
+            ADO.Net classes will take care of mapping it onto the datarow for us.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.Common.NamedPipeStream">
+            <summary>
+            Summary description for API.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Common.Platform.#ctor">
+            <summary>
+            By creating a private ctor, we keep the compiler from creating a default ctor
+            </summary>
+        </member>
+        <member name="T:MySql.Data.Common.SharedMemoryStream">
+            <summary>
+            Summary description for SharedMemoryStream.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.Common.StreamCreator">
+            <summary>
+            Summary description for StreamCreator.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.Common.DBVersion">
+            <summary>
+            Summary description for Version.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.CompressedStream">
+            <summary>
+            Summary description for CompressedStream.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlConnection">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/ClassSummary/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.#ctor">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/DefaultCtor/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.#ctor(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/Ctor1/*" />
+        </member>
+        <member name="E:MySql.Data.MySqlClient.MySqlConnection.InfoMessage">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/InfoMessage/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnection.ServerThread">
+            <summary>
+            Returns the id of the server thread this connection is executing on
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnection.DataSource">
+            <summary>
+            Gets the name of the MySQL server to which to connect.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnection.ConnectionTimeout">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/ConnectionTimeout/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnection.Database">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/Database/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnection.UseCompression">
+            <summary>
+            Indicates if this connection should use compression when communicating with the server.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnection.State">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/State/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnection.ServerVersion">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/ServerVersion/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnection.ConnectionString">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/ConnectionString/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.ICloneable.Clone">
+            <summary>
+            Creates a new MySqlConnection object with the exact same ConnectionString value
+            </summary>
+            <returns>A cloned MySqlConnection object</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.EnlistTransaction(System.Transactions.Transaction)">
+            <summary>
+            Enlists in the specified transaction.
+            </summary>
+            <param name="transaction">
+            A reference to an existing <see cref="T:System.Transactions.Transaction" /> in which to enlist.
+            </param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.BeginTransaction">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/BeginTransaction/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.BeginTransaction(System.Data.IsolationLevel)">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/BeginTransaction1/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.ChangeDatabase(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/ChangeDatabase/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.Ping">
+            <summary>
+            Ping
+            </summary>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.Open">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/Open/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.CreateCommand">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/CreateCommand/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.Close">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/Close/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.GetSchema">
+            <summary>
+            Returns schema information for the data source of this <see cref="T:System.Data.Common.DbConnection" />.
+            </summary>
+            <returns>A <see cref="T:System.Data.DataTable" /> that contains schema information. </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.GetSchema(System.String)">
+            <summary>
+            Returns schema information for the data source of this
+            <see cref="T:System.Data.Common.DbConnection" /> using the specified string for the schema name.
+            </summary>
+            <param name="collectionName">Specifies the name of the schema to return. </param>
+            <returns>A <see cref="T:System.Data.DataTable" /> that contains schema information. </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.GetSchema(System.String,System.String[])">
+            <summary>
+            Returns schema information for the data source of this <see cref="T:System.Data.Common.DbConnection" />
+            using the specified string for the schema name and the specified string array
+            for the restriction values.
+            </summary>
+            <param name="collectionName">Specifies the name of the schema to return.</param>
+            <param name="restrictionValues">Specifies a set of restriction values for the requested schema.</param>
+            <returns>A <see cref="T:System.Data.DataTable" /> that contains schema information.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.ClearPool(MySql.Data.MySqlClient.MySqlConnection)">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/ClearPool/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnection.ClearAllPools">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnection.xml" path="docs/ClearAllPools/*" />
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlInfoMessageEventArgs">
+            <summary>
+            Provides data for the InfoMessage event. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlInfoMessageEventArgs.errors">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Crypt">
+            <summary>
+            Summary description for Crypt.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Crypt.XorScramble(System.Byte[],System.Int32,System.Byte[],System.Int32,System.Byte[],System.Int32)">
+            <summary>
+            Simple XOR scramble
+            </summary>
+            <param name="from">Source array</param>
+            <param name="fromIndex">Index inside source array</param>
+            <param name="to">Destination array</param>
+            <param name="toIndex">Index inside destination array</param>
+            <param name="password">Password used to xor the bits</param>
+            <param name="length">Number of bytes to scramble</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Crypt.Get410Password(System.String,System.Byte[])">
+            <summary>
+            Generate a scrambled password for 4.1.0 using new passwords
+            </summary>
+            <param name="password">The password to scramble</param>
+            <param name="seedBytes">The seedbytes used to scramble</param>
+            <returns>Array of bytes containing the scrambled password</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Crypt.GetOld410Password(System.String,System.Byte[])">
+            <summary>
+            Generates a proper hash for old style 4.1.0 passwords.  This would be used
+            if a 4.1.0 server contained old 16 byte hashes.
+            </summary>
+            <param name="password">The password to hash</param>
+            <param name="seedBytes">Seed bytes received from the server</param>
+            <returns>Byte array containing the password hash</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Crypt.Get411Password(System.String,System.String)">
+            <summary>
+            Returns a byte array containing the proper encryption of the
+            given password/seed according to the new 4.1.1 authentication scheme.
+            </summary>
+            <param name="password">
+            </param>
+            <param name="seed">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Crypt.EncryptPassword(System.String,System.String,System.Boolean)">
+            <summary>
+            Encrypts a password using the MySql encryption scheme
+            </summary>
+            <param name="password">The password to encrypt</param>
+            <param name="seed">The encryption seed the server gave us</param>
+            <param name="new_ver">Indicates if we should use the old or new encryption scheme</param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Crypt.Hash(System.String)">
+            <summary>
+            Hashes a password using the algorithm from Monty's code.
+            The first element in the return is the result of the "old" hash.
+            The second element is the rest of the "new" hash.
+            </summary>
+            <param name="P">Password to be hashed</param>
+            <returns>Two element array containing the hashed values</returns>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlDataAdapter">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataAdapter.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataAdapter.xml" path="docs/class/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.#ctor">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataAdapter.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataAdapter.xml" path="docs/Ctor/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.#ctor(MySql.Data.MySqlClient.MySqlCommand)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataAdapter.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataAdapter.xml" path="docs/Ctor1/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.#ctor(System.String,MySql.Data.MySqlClient.MySqlConnection)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataAdapter.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataAdapter.xml" path="docs/Ctor2/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.#ctor(System.String,System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataAdapter.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataAdapter.xml" path="docs/Ctor3/*" />
+        </member>
+        <member name="E:MySql.Data.MySqlClient.MySqlDataAdapter.RowUpdating">
+            <summary>
+            Occurs during Update before a command is executed against the data source. The attempt to update is made, so the event fires.
+            </summary>
+        </member>
+        <member name="E:MySql.Data.MySqlClient.MySqlDataAdapter.RowUpdated">
+            <summary>
+            Occurs during Update after a command is executed against the data source. The attempt to update is made, so the event fires.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlDataAdapter.DeleteCommand">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataAdapter.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataAdapter.xml" path="docs/DeleteCommand/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlDataAdapter.InsertCommand">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataAdapter.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataAdapter.xml" path="docs/InsertCommand/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlDataAdapter.SelectCommand">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataAdapter.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataAdapter.xml" path="docs/SelectCommand/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlDataAdapter.UpdateCommand">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataAdapter.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataAdapter.xml" path="docs/UpdateCommand/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.CreateRowUpdatedEvent(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)">
+            <summary>
+            Overridden. See <see cref="M:System.Data.Common.DbDataAdapter.CreateRowUpdatedEvent(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />.
+            </summary>
+            <param name="dataRow">
+            </param>
+            <param name="command">
+            </param>
+            <param name="statementType">
+            </param>
+            <param name="tableMapping">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.CreateRowUpdatingEvent(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)">
+            <summary>
+            Overridden. See <see cref="M:System.Data.Common.DbDataAdapter.CreateRowUpdatingEvent(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />.
+            </summary>
+            <param name="dataRow">
+            </param>
+            <param name="command">
+            </param>
+            <param name="statementType">
+            </param>
+            <param name="tableMapping">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.OnRowUpdating(System.Data.Common.RowUpdatingEventArgs)">
+            <summary>
+            Overridden. Raises the RowUpdating event.
+            </summary>
+            <param name="value">A MySqlRowUpdatingEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataAdapter.OnRowUpdated(System.Data.Common.RowUpdatedEventArgs)">
+            <summary>
+            Overridden. Raises the RowUpdated event.
+            </summary>
+            <param name="value">A MySqlRowUpdatedEventArgs that contains the event data. </param>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlRowUpdatingEventArgs">
+            <summary>
+            Provides data for the RowUpdating event. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlRowUpdatingEventArgs.#ctor(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)">
+            <summary>
+            Initializes a new instance of the MySqlRowUpdatingEventArgs class.
+            </summary>
+            <param name="row">The <see cref="T:System.Data.DataRow" /> to
+            <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</param>
+            <param name="command">The <see cref="T:System.Data.IDbCommand" /> to execute during <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</param>
+            <param name="statementType">One of the <see cref="T:System.Data.StatementType" /> values that specifies the type of query executed.</param>
+            <param name="tableMapping">The <see cref="T:System.Data.Common.DataTableMapping" /> sent through an <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</param>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlRowUpdatingEventArgs.Command">
+            <summary>
+            Gets or sets the MySqlCommand to execute when performing the Update.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlRowUpdatedEventArgs">
+            <summary>
+            Provides data for the RowUpdated event. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlRowUpdatedEventArgs.#ctor(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)">
+            <summary>
+            Initializes a new instance of the MySqlRowUpdatedEventArgs class.
+            </summary>
+            <param name="row">The <see cref="T:System.Data.DataRow" /> sent through an <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</param>
+            <param name="command">The <see cref="T:System.Data.IDbCommand" /> executed when <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" /> is called.</param>
+            <param name="statementType">One of the <see cref="T:System.Data.StatementType" /> values that specifies the type of query executed.</param>
+            <param name="tableMapping">The <see cref="T:System.Data.Common.DataTableMapping" /> sent through an <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</param>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlRowUpdatedEventArgs.Command">
+            <summary>
+            Gets or sets the MySqlCommand executed when Update is called.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlDataReader">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/ClassSummary/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlDataReader.Item(System.Int32)">
+            <summary>
+            Overloaded. Gets the value of a column in its native format.
+            In C#, this property is the indexer for the MySqlDataReader class.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlDataReader.Item(System.String)">
+            <summary>
+            Gets the value of a column in its native format.
+            	[C#] In C#, this property is the indexer for the MySqlDataReader class.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlDataReader.Depth">
+            <summary>
+            Gets a value indicating the depth of nesting for the current row.  This method is not
+            supported currently and always returns 0.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlDataReader.FieldCount">
+            <summary>
+            Gets the number of columns in the current row.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlDataReader.HasRows">
+            <summary>
+            Gets a value indicating whether the MySqlDataReader contains one or more rows.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlDataReader.IsClosed">
+            <summary>
+            Gets a value indicating whether the data reader is closed.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlDataReader.RecordsAffected">
+            <summary>
+            Gets the number of rows changed, inserted, or deleted by execution of the SQL statement.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.Close">
+            <summary>
+            Closes the MySqlDataReader object.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetBoolean(System.String)">
+            <summary>
+            Gets the value of the specified column as a Boolean.
+            </summary>
+            <param name="name">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetBoolean(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a Boolean.
+            </summary>
+            <param name="i">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetByte(System.String)">
+            <summary>
+            Gets the value of the specified column as a byte.
+            </summary>
+            <param name="name">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetByte(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a byte.
+            </summary>
+            <param name="i">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Reads a stream of bytes from the specified column offset into the buffer an array starting at the given buffer offset.
+            </summary>
+            <param name="i">The zero-based column ordinal. </param>
+            <param name="fieldOffset">The index within the field from which to begin the read operation. </param>
+            <param name="buffer">The buffer into which to read the stream of bytes. </param>
+            <param name="bufferoffset">The index for buffer to begin the read operation. </param>
+            <param name="length">The maximum length to copy into the buffer. </param>
+            <returns>The actual number of bytes read.</returns>
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="MyDocs/MyMembers[@name=&quot;GetBytes&quot;]/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetChar(System.String)">
+            <summary>
+            Gets the value of the specified column as a single character.
+            </summary>
+            <param name="name">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetChar(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a single character.
+            </summary>
+            <param name="i">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)">
+            <summary>
+            Reads a stream of characters from the specified column offset into the buffer as an array starting at the given buffer offset.
+            </summary>
+            <param name="i">
+            </param>
+            <param name="fieldoffset">
+            </param>
+            <param name="buffer">
+            </param>
+            <param name="bufferoffset">
+            </param>
+            <param name="length">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetDataTypeName(System.Int32)">
+            <summary>
+            Gets the name of the source data type.
+            </summary>
+            <param name="i">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetMySqlDateTime(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetMySqlDateTime/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetMySqlDateTime(System.Int32)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetMySqlDateTime/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetDateTime(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetDateTimeS/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetDateTime(System.Int32)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetDateTime/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetDecimal(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetDecimalS/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetDecimal(System.Int32)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetDecimal/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetDouble(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetDoubleS/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetDouble(System.Int32)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetDouble/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetFieldType(System.Int32)">
+            <summary>
+            Gets the Type that is the data type of the object.
+            </summary>
+            <param name="i">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetFloat(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetFloatS/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetFloat(System.Int32)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetFloat/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetGuid(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetGuidS/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetGuid(System.Int32)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetGuid/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetInt16(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetInt16S/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetInt16(System.Int32)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetInt16/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetInt32(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetInt32S/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetInt32(System.Int32)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetInt32/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetInt64(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetInt64S/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetInt64(System.Int32)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetInt64/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetName(System.Int32)">
+            <summary>
+            Gets the name of the specified column.
+            </summary>
+            <param name="i">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetOrdinal(System.String)">
+            <summary>
+            Gets the column ordinal, given the name of the column.
+            </summary>
+            <param name="name">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetSchemaTable">
+            <summary>
+            Returns a DataTable that describes the column metadata of the MySqlDataReader.
+            </summary>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetString(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetStringS/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetString(System.Int32)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetString/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetTimeSpan(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetTimeSpan/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetTimeSpan(System.Int32)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetTimeSpan/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetValue(System.Int32)">
+            <summary>
+            Gets the value of the specified column in its native format.
+            </summary>
+            <param name="i">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetValues(System.Object[])">
+            <summary>
+            Gets all attribute columns in the collection for the current row.
+            </summary>
+            <param name="values">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetUInt16(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetUInt16/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetUInt16(System.Int32)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetUInt16/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetUInt32(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetUInt32/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetUInt32(System.Int32)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetUInt32/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetUInt64(System.String)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetUInt64/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetUInt64(System.Int32)">
+            <!-- Badly formed XML in at comment file `docs/MySqlDataReader.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlDataReader.xml" path="docs/GetUInt64/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.IsDBNull(System.Int32)">
+            <summary>
+            Gets a value indicating whether the column contains non-existent or missing values.
+            </summary>
+            <param name="i">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetResultSet">
+            <summary>
+            GetResultSet is the core resultset processing method.  It gets called by NextResult
+            and will loop until it finds a select resultset at which point it will return the
+            number of columns in that result.  It will _not_ return for non-select resultsets instead
+            just updating the internal lastInsertId and affectedRows variables.
+            </summary>
+            <returns>-1 if no more results exist, &gt;= 0 for select results</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.NextResult">
+            <summary>
+            Advances the data reader to the next result, when reading the results of batch SQL statements.
+            </summary>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.Read">
+            <summary>
+            Advances the MySqlDataReader to the next record.
+            </summary>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlDataReader.GetEnumerator">
+            <summary>
+            Returns an <see cref="T:System.Collections.IEnumerator" /> that iterates through the <see cref="T:MySql.Data.MySqlClient.MySqlDataReader" />.
+            </summary>
+            <returns>
+            </returns>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Driver">
+            <summary>
+            Summary description for BaseDriver.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Driver.LoadCharacterSets">
+            <summary>
+            Loads all the current character set names and ids for this server
+            into the charSets hashtable
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlException">
+            <summary>
+            The exception that is thrown when MySQL returns an error. This class cannot be inherited.
+            </summary>
+            <!-- Badly formed XML in at comment file `docs/MySqlException.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlException.xml" path="MyDocs/MyMembers[@name=&quot;Class&quot;]/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlException.Number">
+            <summary>
+            Gets a number that identifies the type of error.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlException.IsFatal">
+            <summary>
+            True if this exception was fatal and cause the closing of the connection, false otherwise.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlField">
+            <summary>
+            Summary description for Field.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.CustomInstaller">
+            <summary>
+            We are adding a custom installer class to our assembly so our installer
+            can make proper changes to the machine.config file.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.CustomInstaller.Install(System.Collections.IDictionary)">
+            <summary>
+            We override Install so we can add our assembly to the proper
+            machine.config files.
+            </summary>
+            <param name="stateSaver">
+            </param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.CustomInstaller.Uninstall(System.Collections.IDictionary)">
+            <summary>
+            We override Uninstall so we can remove out assembly from the
+            machine.config files.
+            </summary>
+            <param name="savedState">
+            </param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.ISSchemaProvider.GetProcedures(System.String[])">
+            <summary>
+            Return schema information about procedures and functions
+            Restrictions supported are:
+            schema, name, type
+            </summary>
+            <param name="restrictions">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.ISSchemaProvider.GetProcedureParameters(System.String[],System.Data.DataTable)">
+            <summary>
+            Return schema information about parameters for procedures and functions
+            Restrictions supported are:
+            schema, name, type, parameter name
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.ISSchemaProvider.InitParameterRow(System.Data.DataRow,System.Data.DataRow)">
+            <summary>
+            Initializes a new row for the procedure parameters table.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.ISSchemaProvider.ParseDataType(System.Data.DataRow,MySql.Data.Common.SqlTokenizer)">
+            <summary>
+            Parses out the elements of a procedure parameter data type.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Logger">
+            <summary>
+            Provides methods to output messages to our log
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlClientFactory">
+            <summary>
+            DBProviderFactory implementation for MysqlClient.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlClientFactory.Instance">
+            <summary>
+            Gets an instance of the <see cref="T:MySql.Data.MySqlClient.MySqlClientFactory" />.
+            This can be used to retrieve strongly typed data objects.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlClientFactory.CanCreateDataSourceEnumerator">
+            <summary>
+            Returns true if a <b>MySqlDataSourceEnumerator</b> can be created;
+            otherwise false.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlClientFactory.CreateCommandBuilder">
+            <summary>
+            Returns a strongly typed <see cref="T:System.Data.Common.DbCommandBuilder" /> instance.
+            </summary>
+            <returns>A new strongly typed instance of <b>DbCommandBuilder</b>.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlClientFactory.CreateCommand">
+            <summary>
+            Returns a strongly typed <see cref="T:System.Data.Common.DbCommand" /> instance.
+            </summary>
+            <returns>A new strongly typed instance of <b>DbCommand</b>.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlClientFactory.CreateConnection">
+            <summary>
+            Returns a strongly typed <see cref="T:System.Data.Common.DbConnection" /> instance.
+            </summary>
+            <returns>A new strongly typed instance of <b>DbConnection</b>.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlClientFactory.CreateDataAdapter">
+            <summary>
+            Returns a strongly typed <see cref="T:System.Data.Common.DbDataAdapter" /> instance.
+            </summary>
+            <returns>A new strongly typed instance of <b>DbDataAdapter</b>. </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlClientFactory.CreateParameter">
+            <summary>
+            Returns a strongly typed <see cref="T:System.Data.Common.DbParameter" /> instance.
+            </summary>
+            <returns>A new strongly typed instance of <b>DbParameter</b>.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlClientFactory.CreateConnectionStringBuilder">
+            <summary>
+            Returns a strongly typed <see cref="T:System.Data.Common.DbConnectionStringBuilder" /> instance.
+            </summary>
+            <returns>A new strongly typed instance of <b>DbConnectionStringBuilder</b>.</returns>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlConnectionStringBuilder">
+            <!-- Badly formed XML in at comment file `docs/MySqlConnectionStringBuilder.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlConnectionStringBuilder.xml" path="docs/Class/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MySql.Data.MySqlClient.MySqlConnectionStringBuilder" /> class.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MySql.Data.MySqlClient.MySqlConnectionStringBuilder" /> class.
+            The provided connection string provides the data for the instance's internal
+            connection information.
+            </summary>
+            <param name="connectionString">The basis for the object's internal connection
+            information. Parsed into name/value pairs. Invalid key names raise
+            <see cref="T:System.Collections.Generic.KeyNotFoundException" />.
+            </param>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.Item(System.String)">
+            <summary>
+            Gets or sets the value associated with the specified key. In C#, this property
+            is the indexer.
+            </summary>
+            <param name="keyword">The key of the item to get or set.</param>
+            <returns>The value associated with the specified key. </returns>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.Server">
+            <summary>
+            Gets or sets the name of the server.
+            </summary>
+            <value>The server.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.Database">
+            <summary>
+            Gets or sets the name of the database the connection should
+            initially connect to.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ConnectionProtocol">
+            <summary>
+            Gets or sets the protocol that should be used for communicating
+            with MySQL.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.PipeName">
+            <summary>
+            Gets or sets the name of the named pipe that should be used
+            for communicating with MySQL.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.UseCompression">
+            <summary>
+            Gets or sets a boolean value that indicates whether this connection
+            should use compression.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.AllowBatch">
+            <summary>
+            Gets or sets a boolean value that indicates whether this connection will allow
+            commands to send multiple SQL statements in one execution.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.Logging">
+            <summary>
+            Gets or sets a boolean value that indicates whether logging is enabled.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.SharedMemoryName">
+            <summary>
+            Gets or sets the base name of the shared memory objects used to
+            communicate with MySQL when the shared memory protocol is being used.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.UseOldSyntax">
+            <summary>
+            Gets or sets a boolean value that indicates whether this connection uses
+            the old style (@) parameter markers or the new (?) style.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.DriverType">
+            <summary>
+            Gets or sets the driver type that should be used for this connection.
+            </summary>
+            <remarks>
+            There is only one valid value for this setting currently.
+            </remarks>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.Port">
+            <summary>
+            Gets or sets the port number that is used when the socket
+            protocol is being used.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ConnectionTimeout">
+            <summary>
+            Gets or sets the connection timeout.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.DefaultCommandTimeout">
+            <summary>
+            Gets or sets the default command timeout.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.UserID">
+            <summary>
+            Gets or sets the user id that should be used to connect with.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.Password">
+            <summary>
+            Gets or sets the password that should be used to connect with.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.PersistSecurityInfo">
+            <summary>
+            Gets or sets a boolean value that indicates if the password should be persisted
+            in the connection string.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.AllowZeroDateTime">
+            <summary>
+            Gets or sets a boolean value that indicates if zero date time values are supported.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ConvertZeroDateTime">
+            <summary>
+            Gets or sets a boolean value indicating if zero datetime values should be
+            converted to DateTime.MinValue.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.UseUsageAdvisor">
+            <summary>
+            Gets or sets a boolean value indicating if the Usage Advisor should be enabled.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ProcedureCacheSize">
+            <summary>
+            Gets or sets the size of the stored procedure cache.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.UsePerformanceMonitor">
+            <summary>
+            Gets or sets a boolean value indicating if the permon hooks should be enabled.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.IgnorePrepare">
+            <summary>
+            Gets or sets a boolean value indicating if calls to Prepare() should be ignored.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ConnectionLifeTime">
+            <summary>
+            Gets or sets the lifetime of a pooled connection.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.Pooling">
+            <summary>
+            Gets or sets a boolean value indicating if connection pooling is enabled.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.MinimumPoolSize">
+            <summary>
+            Gets the minimum connection pool size.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.MaximumPoolSize">
+            <summary>
+            Gets or sets the maximum connection pool setting.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ConnectionReset">
+            <summary>
+            Gets or sets a boolean value indicating if the connection should be reset when retrieved
+            from the pool.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.CharacterSet">
+            <summary>
+            Gets or sets the character set that should be used for sending queries to the server.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.TreatBlobsAsUTF8">
+            <summary>
+            Indicates whether the driver should treat binary blobs as UTF8
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.BlobAsUTF8IncludePattern">
+            <summary>
+            Gets or sets the pattern that matches the columns that should be treated as UTF8
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.BlobAsUTF8ExcludePattern">
+            <summary>
+            Gets or sets the pattern that matches the columns that should not be treated as UTF8
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.GetConnectionString(System.Boolean)">
+            <summary>
+            Takes a given connection string and returns it, possible
+            stripping out the password info
+            </summary>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.Clear">
+            <summary>
+            Clears the contents of the <see cref="T:MySql.Data.MySqlClient.MySqlConnectionStringBuilder" /> instance.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.Remove(System.String)">
+            <summary>
+            Removes the entry with the specified key from the <see cref="T:System.Data.Common.DbConnectionStringBuilder"></see> instance.
+            </summary>
+            <param name="keyword">The key of the key/value pair to be removed from the connection string in this <see cref="T:System.Data.Common.DbConnectionStringBuilder"></see>.</param>
+            <returns>
+            true if the key existed within the connection string and was removed; false if the key did not exist.
+            </returns>
+            <exception cref="T:System.NotSupportedException">The <see cref="T:System.Data.Common.DbConnectionStringBuilder"></see> is read-only, or the <see cref="T:System.Data.Common.DbConnectionStringBuilder"></see> has a fixed size.</exception>
+            <exception cref="T:System.ArgumentNullException">keyword is null (Nothing in Visual Basic)</exception>
+            <PermissionSet>
+                <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" PathDiscovery="*AllFiles*" />
+            </PermissionSet>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.TryGetValue(System.String,System.Object@)">
+            <summary>
+            Retrieves a value corresponding to the supplied key from this <see cref="T:System.Data.Common.DbConnectionStringBuilder"></see>.
+            </summary>
+            <param name="keyword">The key of the item to retrieve.</param>
+            <param name="value">The value corresponding to the key.</param>
+            <returns>
+            true if keyword was found within the connection string, false otherwise.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">keyword contains a null value (Nothing in Visual Basic).</exception>
+            <PermissionSet>
+                <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" PathDiscovery="*AllFiles*" />
+            </PermissionSet>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.ClientFlags">
+            <summary>
+            Summary description for ClientParam.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.DBCmd">
+            <summary>
+            DB Operations Code
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlDbType">
+            <summary>
+            Specifies MySQL specific data type of a field, property, for use in a <see cref="T:MySql.Data.MySqlClient.MySqlParameter" />.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Decimal">
+            <summary>
+                <see cref="T:System.Decimal" />
+                <para>A fixed precision and scale numeric value between -1038
+            -1 and 10 38 -1.</para>
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Byte">
+            <summary>
+                <see cref="T:System.Byte" />
+                <para>The signed range is -128 to 127. The unsigned
+            range is 0 to 255.</para>
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Int16">
+            <summary>
+                <see cref="T:System.Int16" />
+                <para>A 16-bit signed integer. The signed range is
+            -32768 to 32767. The unsigned range is 0 to 65535</para>
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Int24">
+            <summary>
+            Specifies a 24 (3 byte) signed or unsigned value.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Int32">
+            <summary>
+                <see cref="T:System.Int32" />
+                <para>A 32-bit signed integer</para>
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Int64">
+            <summary>
+                <see cref="T:System.Int64" />
+                <para>A 64-bit signed integer.</para>
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Float">
+            <summary>
+                <see cref="T:System.Single" />
+                <para>A small (single-precision) floating-point
+            number. Allowable values are -3.402823466E+38 to -1.175494351E-38,
+            0, and 1.175494351E-38 to 3.402823466E+38.</para>
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Double">
+            <summary>
+                <see cref="T:System.Double" />
+                <para>A normal-size (double-precision)
+            floating-point number. Allowable values are -1.7976931348623157E+308
+            to -2.2250738585072014E-308, 0, and 2.2250738585072014E-308 to
+            1.7976931348623157E+308.</para>
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Timestamp">
+            <summary>
+            A timestamp. The range is '1970-01-01 00:00:00' to sometime in the
+            year 2037
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Date">
+            <summary>
+            Date The supported range is '1000-01-01' to '9999-12-31'.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Time">
+            <summary>
+            Time <para>The range is '-838:59:59' to '838:59:59'.</para></summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Datetime">
+            <summary>
+            DateTime The supported range is '1000-01-01 00:00:00' to
+            '9999-12-31 23:59:59'.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Year">
+            <summary>
+            A year in 2- or 4-digit format (default is 4-digit). The
+            allowable values are 1901 to 2155, 0000 in the 4-digit year
+            format, and 1970-2069 if you use the 2-digit format (70-69).
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Newdate">
+            <summary>
+                <b>Obsolete</b>  Use Datetime or Date type
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.VarString">
+            <summary>
+            A variable-length string containing 0 to 65535 characters
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Bit">
+            <summary>
+            Bit-field data type
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.NewDecimal">
+            <summary>
+            New Decimal
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Enum">
+            <summary>
+            An enumeration. A string object that can have only one value,
+            chosen from the list of values 'value1', 'value2', ..., NULL
+            or the special "" error value. An ENUM can have a maximum of
+            65535 distinct values
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Set">
+            <summary>
+            A set. A string object that can have zero or more values, each
+            of which must be chosen from the list of values 'value1', 'value2',
+            ... A SET can have a maximum of 64 members.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.TinyBlob">
+            <summary>
+            A binary column with a maximum length of 255 (2^8 - 1)
+            characters
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.MediumBlob">
+            <summary>
+            A binary column with a maximum length of 16777215 (2^24 - 1) bytes.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.LongBlob">
+            <summary>
+            A binary column with a maximum length of 4294967295 or
+            4G (2^32 - 1) bytes.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Blob">
+            <summary>
+            A binary column with a maximum length of 65535 (2^16 - 1) bytes.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.VarChar">
+            <summary>
+            A variable-length string containing 0 to 255 bytes.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.String">
+            <summary>
+            A fixed-length string.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Geometry">
+            <summary>
+            Geometric (GIS) data type.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.UByte">
+            <summary>
+            Unsigned 8-bit value.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.UInt16">
+            <summary>
+            Unsigned 16-bit value.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.UInt24">
+            <summary>
+            Unsigned 24-bit value.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.UInt32">
+            <summary>
+            Unsigned 32-bit value.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.UInt64">
+            <summary>
+            Unsigned 64-bit value.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Binary">
+            <summary>
+            Fixed length binary string.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.VarBinary">
+            <summary>
+            Variable length binary string.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.TinyText">
+            <summary>
+            A text column with a maximum length of 255 (2^8 - 1) characters.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.MediumText">
+            <summary>
+            A text column with a maximum length of 16777215 (2^24 - 1) characters.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.LongText">
+            <summary>
+            A text column with a maximum length of 4294967295 or
+            4G (2^32 - 1) characters.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDbType.Text">
+            <summary>
+            A text column with a maximum length of 65535 (2^16 - 1) characters.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlConnectionProtocol">
+            <summary>
+            Allows the user to specify the type of connection that should
+            be used.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlConnectionProtocol.Sockets">
+            <summary>
+            TCP/IP style connection.  Works everywhere.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlConnectionProtocol.NamedPipe">
+            <summary>
+            Named pipe connection.  Works only on Windows systems.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlConnectionProtocol.UnixSocket">
+            <summary>
+            Unix domain socket connection.  Works only with Unix systems.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlConnectionProtocol.SharedMemory">
+            <summary>
+            Shared memory connection.  Currently works only with Windows systems.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlDriverType">
+            <summary>
+            Specifies the connection types supported
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDriverType.Native">
+            <summary>
+            Use TCP/IP sockets.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDriverType.Client">
+            <summary>
+            Use client library.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlDriverType.Embedded">
+            <summary>
+            Use MySQL embedded server.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlError">
+            <summary>
+            Collection of error codes that can be returned by the server
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlError.#ctor(System.String,System.Int32,System.String)">
+            <summary>
+            </summary>
+            <param name="level">
+            </param>
+            <param name="code">
+            </param>
+            <param name="message">
+            </param>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlError.Level">
+            <summary>
+            Error level
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlError.Code">
+            <summary>
+            Error code
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlError.Message">
+            <summary>
+            Error message
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlErrorCode">
+            <summary>
+            Provides a reference to error codes returned by MySQL.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.DuplicateKey">
+            <summary>
+            There is already a key with the given values.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.KeyNotFound">
+            <summary>
+            The specified key was not found.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.UnableToConnectToHost">
+            <summary>
+            Given when the connection is unable to successfully connect to host.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.DuplicateKeyName">
+            <summary>
+            Duplicate Key Name
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.DuplicateKeyEntry">
+            <summary>
+            Duplicate Key Entry
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.HostNotPrivileged">
+            <summary>
+            The given host is not allowed to connect
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.AnonymousUser">
+            <summary>
+            The anonymous user is not allowed to connect
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.PasswordNotAllowed">
+            <summary>
+            The given password is not allowed
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.PasswordNoMatch">
+            <summary>
+            The given password does not match
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.PacketTooLarge">
+            <summary>
+            An attempt was made to send or receive a packet larger than
+            max_allowed_packet_size
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlHelper">
+            <summary>
+            Helper class that makes it easier to work with the provider.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteNonQuery(MySql.Data.MySqlClient.MySqlConnection,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Executes a single command against a MySQL database.  The <see cref="T:MySql.Data.MySqlClient.MySqlConnection" /> is assumed to be
+            open when the method is called and remains open after the method completes.
+            </summary>
+            <param name="connection">
+                <see cref="T:MySql.Data.MySqlClient.MySqlConnection" /> object to use</param>
+            <param name="commandText">SQL command to be executed</param>
+            <param name="commandParameters">Array of <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> objects to use with the command.</param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteNonQuery(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Executes a single command against a MySQL database.  A new <see cref="T:MySql.Data.MySqlClient.MySqlConnection" /> is created
+            using the <see cref="P:MySql.Data.MySqlClient.MySqlConnection.ConnectionString" /> given.
+            </summary>
+            <param name="connectionString">
+                <see cref="P:MySql.Data.MySqlClient.MySqlConnection.ConnectionString" /> to use</param>
+            <param name="commandText">SQL command to be executed</param>
+            <param name="parms">Array of <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> objects to use with the command.</param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteDataRow(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Executes a single SQL command and returns the first row of the resultset.  A new MySqlConnection object
+            is created, opened, and closed during this method.
+            </summary>
+            <param name="connectionString">Settings to be used for the connection</param>
+            <param name="commandText">Command to execute</param>
+            <param name="parms">Parameters to use for the command</param>
+            <returns>DataRow containing the first row of the resultset</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteDataset(System.String,System.String)">
+            <summary>
+            Executes a single SQL command and returns the resultset in a <see cref="T:System.Data.DataSet" />.
+            A new MySqlConnection object is created, opened, and closed during this method.
+            </summary>
+            <param name="connectionString">Settings to be used for the connection</param>
+            <param name="commandText">Command to execute</param>
+            <returns>
+                <see cref="T:System.Data.DataSet" /> containing the resultset</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteDataset(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Executes a single SQL command and returns the resultset in a <see cref="T:System.Data.DataSet" />.
+            A new MySqlConnection object is created, opened, and closed during this method.
+            </summary>
+            <param name="connectionString">Settings to be used for the connection</param>
+            <param name="commandText">Command to execute</param>
+            <param name="commandParameters">Parameters to use for the command</param>
+            <returns>
+                <see cref="T:System.Data.DataSet" /> containing the resultset</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteDataset(MySql.Data.MySqlClient.MySqlConnection,System.String)">
+            <summary>
+            Executes a single SQL command and returns the resultset in a <see cref="T:System.Data.DataSet" />.
+            The state of the <see cref="T:MySql.Data.MySqlClient.MySqlConnection" /> object remains unchanged after execution
+            of this method.
+            </summary>
+            <param name="connection">
+                <see cref="T:MySql.Data.MySqlClient.MySqlConnection" /> object to use</param>
+            <param name="commandText">Command to execute</param>
+            <returns>
+                <see cref="T:System.Data.DataSet" /> containing the resultset</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteDataset(MySql.Data.MySqlClient.MySqlConnection,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Executes a single SQL command and returns the resultset in a <see cref="T:System.Data.DataSet" />.
+            The state of the <see cref="T:MySql.Data.MySqlClient.MySqlConnection" /> object remains unchanged after execution
+            of this method.
+            </summary>
+            <param name="connection">
+                <see cref="T:MySql.Data.MySqlClient.MySqlConnection" /> object to use</param>
+            <param name="commandText">Command to execute</param>
+            <param name="commandParameters">Parameters to use for the command</param>
+            <returns>
+                <see cref="T:System.Data.DataSet" /> containing the resultset</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.UpdateDataSet(System.String,System.String,System.Data.DataSet,System.String)">
+            <summary>
+            Updates the given table with data from the given <see cref="T:System.Data.DataSet" /></summary>
+            <param name="connectionString">Settings to use for the update</param>
+            <param name="commandText">Command text to use for the update</param>
+            <param name="ds">
+                <see cref="T:System.Data.DataSet" /> containing the new data to use in the update</param>
+            <param name="tablename">Tablename in the dataset to update</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteReader(MySql.Data.MySqlClient.MySqlConnection,MySql.Data.MySqlClient.MySqlTransaction,System.String,MySql.Data.MySqlClient.MySqlParameter[],System.Boolean)">
+            <summary>
+            Executes a single command against a MySQL database, possibly inside an existing transaction.
+            </summary>
+            <param name="connection">
+                <see cref="T:MySql.Data.MySqlClient.MySqlConnection" /> object to use for the command</param>
+            <param name="transaction">
+                <see cref="T:MySql.Data.MySqlClient.MySqlTransaction" /> object to use for the command</param>
+            <param name="commandText">Command text to use</param>
+            <param name="commandParameters">Array of <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> objects to use with the command</param>
+            <param name="ExternalConn">True if the connection should be preserved, false if not</param>
+            <returns>
+                <see cref="T:MySql.Data.MySqlClient.MySqlDataReader" /> object ready to read the results of the command</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteReader(System.String,System.String)">
+            <summary>
+            Executes a single command against a MySQL database.
+            </summary>
+            <param name="connectionString">Settings to use for this command</param>
+            <param name="commandText">Command text to use</param>
+            <returns>
+                <see cref="T:MySql.Data.MySqlClient.MySqlDataReader" /> object ready to read the results of the command</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteReader(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Executes a single command against a MySQL database.
+            </summary>
+            <param name="connectionString">Settings to use for this command</param>
+            <param name="commandText">Command text to use</param>
+            <param name="commandParameters">Array of <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> objects to use with the command</param>
+            <returns>
+                <see cref="T:MySql.Data.MySqlClient.MySqlDataReader" /> object ready to read the results of the command</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteScalar(System.String,System.String)">
+            <summary>
+            Execute a single command against a MySQL database.
+            </summary>
+            <param name="connectionString">Settings to use for the update</param>
+            <param name="commandText">Command text to use for the update</param>
+            <returns>The first column of the first row in the result set, or a null reference if the result set is empty.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteScalar(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Execute a single command against a MySQL database.
+            </summary>
+            <param name="connectionString">Settings to use for the command</param>
+            <param name="commandText">Command text to use for the command</param>
+            <param name="commandParameters">Parameters to use for the command</param>
+            <returns>The first column of the first row in the result set, or a null reference if the result set is empty.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteScalar(MySql.Data.MySqlClient.MySqlConnection,System.String)">
+            <summary>
+            Execute a single command against a MySQL database.
+            </summary>
+            <param name="connection">
+                <see cref="T:MySql.Data.MySqlClient.MySqlConnection" /> object to use</param>
+            <param name="commandText">Command text to use for the command</param>
+            <returns>The first column of the first row in the result set, or a null reference if the result set is empty.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlHelper.ExecuteScalar(MySql.Data.MySqlClient.MySqlConnection,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Execute a single command against a MySQL database.
+            </summary>
+            <param name="connection">
+                <see cref="T:MySql.Data.MySqlClient.MySqlConnection" /> object to use</param>
+            <param name="commandText">Command text to use for the command</param>
+            <param name="commandParameters">Parameters to use for the command</param>
+            <returns>The first column of the first row in the result set, or a null reference if the result set is empty.</returns>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlPool">
+            <summary>
+            Summary description for MySqlPool.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlPool.HasIdleConnections">
+            <summary>
+            It is assumed that this property will only be used from inside an active
+            lock.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlPool.BeingCleared">
+            <summary>
+            Indicates whether this pool is being cleared.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlPool.CheckoutConnection">
+            <summary>
+            CheckoutConnection handles the process of pulling a driver
+            from the idle pool, possibly resetting its state,
+            and adding it to the in use pool.  We assume that this method is only
+            called inside an active lock so there is no need to acquire a new lock.
+            </summary>
+            <returns>An idle driver object</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlPool.GetPooledConnection">
+            <summary>
+            It is assumed that this method is only called from inside an active lock.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection">
+            <summary>
+            It is assumed that this method is only called from inside an active lock.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlPool.RemoveConnection(MySql.Data.MySqlClient.Driver)">
+            <summary>
+            Removes a connection from the in use pool.  The only situations where this method
+            would be called are when a connection that is in use gets some type of fatal exception
+            or when the connection is being returned to the pool and it's too old to be
+            returned.
+            </summary>
+            <param name="driver">
+            </param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlPool.Clear">
+            <summary>
+            Clears this pool of all idle connections and marks this pool and being cleared
+            so all other connections are closed when they are returned.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlPoolManager">
+            <summary>
+            Summary description for MySqlPoolManager.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlStream">
+            <summary>
+            Summary description for MySqlStream.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlStream.OpenPacket">
+            <summary>
+            OpenPacket is called by NativeDriver to start reading the next
+            packet on the stream.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlStream.LoadPacket">
+            <summary>
+            LoadPacket loads up and decodes the header of the incoming packet.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlStream.SkipPacket">
+            <summary>
+            SkipPacket will read the remaining bytes of a packet into a small
+            local buffer and discard them.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlStream.StartOutput(System.UInt64,System.Boolean)">
+            <summary>
+            StartOutput is used to reset the write state of the stream.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlStream.WriteHeader">
+            <summary>
+            Writes out the header that is used at the start of a transmission
+            and at the beginning of every packet when multipacket is used.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlStream.ReadByte">
+            <summary>
+            Reads the next byte from the incoming stream
+            </summary>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlStream.Read(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Reads a block of bytes from the input stream into the given buffer.
+            </summary>
+            <returns>The number of bytes read.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlStream.PeekByte">
+            <summary>
+            Peek at the next byte off the stream
+            </summary>
+            <returns>The next byte off the stream</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlStream.WriteByte(System.Byte)">
+            <summary>
+            Writes a single byte to the output stream.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlStream.WriteInteger(System.Int64,System.Int32)">
+            <summary>
+            WriteInteger
+            </summary>
+            <param name="v">
+            </param>
+            <param name="numbytes">
+            </param>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.NativeDriver">
+            <summary>
+            Summary description for Driver.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.NativeDriver.SupportsBatch">
+            <summary>
+            Returns true if this connection can handle batch SQL natively
+            This means MySQL 4.1.1 or later.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.NativeDriver.ExecuteCommand(MySql.Data.MySqlClient.DBCmd,System.Byte[],System.Int32)">
+            <summary>
+            ExecuteCommand does the work of writing the actual command bytes to the writer
+            We break it out into a function since it is used in several places besides query
+            </summary>
+            <param name="cmd">The cmd that we are sending</param>
+            <param name="bytes">The bytes of the command, can be null</param>
+            <param name="length">The number of bytes to send</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.NativeDriver.SetDatabase(System.String)">
+            <summary>
+            Sets the current database for the this connection
+            </summary>
+            <param name="dbName">
+            </param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.NativeDriver.SetConnectionFlags">
+            <summary>
+            Return the appropriate set of connection flags for our
+            server capabilities and our user requested options.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.NativeDriver.Authenticate411">
+            <summary>
+            Perform an authentication against a 4.1.1 server
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.NativeDriver.Query(System.Byte[],System.Int32)">
+            <summary>
+            Query is the method that is called to send all queries to the server
+            </summary>
+            <param name="bytes">The query to send</param>
+            <param name="length">The length of the query to send</param>
+            <returns>
+            -1 for non select queries
+            &gt;= 0 for select queries
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.NativeDriver.ReadResult(System.UInt64@,System.Int64@)">
+            <summary>
+            ReadResult will attempt to read a single result from the server.  Note that it is not
+            reading all the rows of the result set but simple determining what type of result it is
+            and returning values appropriately.
+            </summary>
+            <param name="affectedRows">Set to the number of rows affected in this result, 0 for selects</param>
+            <param name="lastInsertId">Set to the id of the row inserted by this result, 0 for non-inserts</param>
+            <returns>Number of columns in the resultset, 0 for non-selects, -1 for no more resultsets</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.NativeDriver.SendFileToServer(System.String)">
+            <summary>
+            Sends the specified file to the server.
+            This supports the LOAD DATA LOCAL INFILE
+            </summary>
+            <param name="filename">
+            </param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.NativeDriver.FetchDataRow(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            FetchDataRow is the method that the data reader calls to see if there is another
+            row to fetch.  In the non-prepared mode, it will simply read the next data packet.
+            In the prepared mode (statementId &gt; 0), it will
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlParameter">
+            <summary>
+            Represents a parameter to a <see cref="T:MySql.Data.MySqlClient.MySqlCommand" />, and optionally, its mapping to <see cref="T:System.Data.DataSet" /> columns. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameter.#ctor">
+            <summary>
+            Initializes a new instance of the MySqlParameter class.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameter.#ctor(System.String,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> class with the parameter name and a value of the new MySqlParameter.
+            </summary>
+            <param name="parameterName">The name of the parameter to map. </param>
+            <param name="value">An <see cref="T:System.Object" /> that is the value of the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" />. </param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameter.#ctor(System.String,MySql.Data.MySqlClient.MySqlDbType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> class with the parameter name and the data type.
+            </summary>
+            <param name="parameterName">The name of the parameter to map. </param>
+            <param name="dbType">One of the <see cref="T:MySql.Data.MySqlClient.MySqlDbType" /> values. </param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameter.#ctor(System.String,MySql.Data.MySqlClient.MySqlDbType,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> class with the parameter name, the <see cref="T:MySql.Data.MySqlClient.MySqlDbType" />, and the size.
+            </summary>
+            <param name="parameterName">The name of the parameter to map. </param>
+            <param name="dbType">One of the <see cref="T:MySql.Data.MySqlClient.MySqlDbType" /> values. </param>
+            <param name="size">The length of the parameter. </param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameter.#ctor(System.String,MySql.Data.MySqlClient.MySqlDbType,System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> class with the parameter name, the <see cref="T:MySql.Data.MySqlClient.MySqlDbType" />, the size, and the source column name.
+            </summary>
+            <param name="parameterName">The name of the parameter to map. </param>
+            <param name="dbType">One of the <see cref="T:MySql.Data.MySqlClient.MySqlDbType" /> values. </param>
+            <param name="size">The length of the parameter. </param>
+            <param name="sourceColumn">The name of the source column. </param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameter.#ctor(System.String,MySql.Data.MySqlClient.MySqlDbType,System.Int32,System.Data.ParameterDirection,System.Boolean,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> class with the parameter name, the type of the parameter, the size of the parameter, a <see cref="T:System.Data.ParameterDirection" />, the precision of the parameter, the scale of the parameter, the source column, a <see cref="T:System.Data.DataRowVersion" /> to use, and the value of the parameter.
+            </summary>
+            <param name="parameterName">The name of the parameter to map. </param>
+            <param name="dbType">One of the <see cref="T:MySql.Data.MySqlClient.MySqlDbType" /> values. </param>
+            <param name="size">The length of the parameter. </param>
+            <param name="direction">One of the <see cref="T:System.Data.ParameterDirection" /> values. </param>
+            <param name="isNullable">true if the value of the field can be null, otherwise false. </param>
+            <param name="precision">The total number of digits to the left and right of the decimal point to which <see cref="P:MySql.Data.MySqlClient.MySqlParameter.Value" /> is resolved.</param>
+            <param name="scale">The total number of decimal places to which <see cref="P:MySql.Data.MySqlClient.MySqlParameter.Value" /> is resolved. </param>
+            <param name="sourceColumn">The name of the source column. </param>
+            <param name="sourceVersion">One of the <see cref="T:System.Data.DataRowVersion" /> values. </param>
+            <param name="value">An <see cref="T:System.Object" /> that is the value of the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" />. </param>
+            <exception cref="T:System.ArgumentException" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameter.DbType">
+            <summary>
+            Gets or sets the <see cref="T:System.Data.DbType" /> of the parameter.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameter.Direction">
+            <summary>
+            Gets or sets a value indicating whether the parameter is input-only, output-only, bidirectional, or a stored procedure return value parameter.
+            As of MySql version 4.1 and earlier, input-only is the only valid choice.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameter.IsNullable">
+            <summary>
+            Gets or sets a value indicating whether the parameter accepts null values.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameter.MySqlDbType">
+            <summary>
+            Gets or sets the MySqlDbType of the parameter.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameter.ParameterName">
+            <summary>
+            Gets or sets the name of the MySqlParameter.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameter.Precision">
+            <summary>
+            Gets or sets the maximum number of digits used to represent the <see cref="P:MySql.Data.MySqlClient.MySqlParameter.Value" /> property.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameter.Scale">
+            <summary>
+            Gets or sets the number of decimal places to which <see cref="P:MySql.Data.MySqlClient.MySqlParameter.Value" /> is resolved.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameter.Size">
+            <summary>
+            Gets or sets the maximum size, in bytes, of the data within the column.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameter.SourceColumn">
+            <summary>
+            Gets or sets the name of the source column that is mapped to the <see cref="T:System.Data.DataSet" /> and used for loading or returning the <see cref="P:MySql.Data.MySqlClient.MySqlParameter.Value" />.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameter.SourceVersion">
+            <summary>
+            Gets or sets the <see cref="T:System.Data.DataRowVersion" /> to use when loading <see cref="P:MySql.Data.MySqlClient.MySqlParameter.Value" />.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameter.Value">
+            <summary>
+            Gets or sets the value of the parameter.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameter.SourceColumnNullMapping">
+            <summary>
+            Sets or gets a value which indicates whether the source column is nullable.
+            This allows <see cref="T:System.Data.Common.DbCommandBuilder" /> to correctly generate Update statements
+            for nullable columns.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameter.ToString">
+            <summary>
+            Overridden. Gets a string containing the <see cref="P:MySql.Data.MySqlClient.MySqlParameter.ParameterName" />.
+            </summary>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameter.ResetDbType">
+            <summary>
+            Resets the <b>DbType</b> property to its original settings.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlParameterCollection">
+            <summary>
+            Represents a collection of parameters relevant to a <see cref="T:MySql.Data.MySqlClient.MySqlCommand" /> as well as their respective mappings to columns in a <see cref="T:System.Data.DataSet" />. This class cannot be inherited.
+            </summary>
+            <!-- Badly formed XML in at comment file `docs/MySqlParameterCollection.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlParameterCollection.xml" path="MyDocs/MyMembers[@name=&quot;Class&quot;]/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameterCollection.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> at the specified index.
+            </summary>
+            <overloads>Gets the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> with a specified attribute.
+            [C#] In C#, this property is the indexer for the <see cref="T:MySql.Data.MySqlClient.MySqlParameterCollection" /> class.
+            </overloads>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameterCollection.Item(System.String)">
+            <summary>
+            Gets the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> with the specified name.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameterCollection.Count">
+            <summary>
+            Gets the number of MySqlParameter objects in the collection.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameterCollection.IsFixedSize">
+            <summary>
+            Gets a value that indicates whether the <see cref="T:MySql.Data.MySqlClient.MySqlParameterCollection" />
+            has a fixed size.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameterCollection.IsReadOnly">
+            <summary>
+            Gets a value that indicates whether the <see cref="T:MySql.Data.MySqlClient.MySqlParameterCollection" />
+            is read-only.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameterCollection.IsSynchronized">
+            <summary>
+            Gets a value that indicates whether the <see cref="T:MySql.Data.MySqlClient.MySqlParameterCollection" />
+            is synchronized.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlParameterCollection.SyncRoot">
+            <summary>
+            Gets an object that can be used to synchronize access to the
+            <see cref="T:MySql.Data.MySqlClient.MySqlParameterCollection" />.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.Add(MySql.Data.MySqlClient.MySqlParameter)">
+            <summary>
+            Adds the specified <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object to the <see cref="T:MySql.Data.MySqlClient.MySqlParameterCollection" />.
+            </summary>
+            <param name="value">The <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> to add to the collection.</param>
+            <returns>The newly added <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.Add(System.String,System.Object)">
+            <summary>
+            Adds a <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> to the <see cref="T:MySql.Data.MySqlClient.MySqlParameterCollection" /> given the specified parameter name and value.
+            </summary>
+            <param name="parameterName">The name of the parameter.</param>
+            <param name="value">The <see cref="P:MySql.Data.MySqlClient.MySqlParameter.Value" /> of the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> to add to the collection.</param>
+            <returns>The newly added <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.Add(System.String,MySql.Data.MySqlClient.MySqlDbType)">
+            <summary>
+            Adds a <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> to the <see cref="T:MySql.Data.MySqlClient.MySqlParameterCollection" /> given the parameter name and the data type.
+            </summary>
+            <param name="parameterName">The name of the parameter.</param>
+            <param name="dbType">One of the <see cref="T:MySql.Data.MySqlClient.MySqlDbType" /> values. </param>
+            <returns>The newly added <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.Add(System.String,MySql.Data.MySqlClient.MySqlDbType,System.Int32)">
+            <summary>
+            Adds a <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> to the <see cref="T:MySql.Data.MySqlClient.MySqlParameterCollection" /> with the parameter name, the data type, and the column length.
+            </summary>
+            <param name="parameterName">The name of the parameter.</param>
+            <param name="dbType">One of the <see cref="T:MySql.Data.MySqlClient.MySqlDbType" /> values. </param>
+            <param name="size">The length of the column.</param>
+            <returns>The newly added <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.Add(System.String,MySql.Data.MySqlClient.MySqlDbType,System.Int32,System.String)">
+            <summary>
+            Adds a <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> to the <see cref="T:MySql.Data.MySqlClient.MySqlParameterCollection" /> with the parameter name, the data type, the column length, and the source column name.
+            </summary>
+            <param name="parameterName">The name of the parameter.</param>
+            <param name="dbType">One of the <see cref="T:MySql.Data.MySqlClient.MySqlDbType" /> values. </param>
+            <param name="size">The length of the column.</param>
+            <param name="sourceColumn">The name of the source column.</param>
+            <returns>The newly added <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.AddRange(System.Array)">
+            <summary>
+            Adds an array of values to the end of the <see cref="T:MySql.Data.MySqlClient.MySqlParameterCollection" />.
+            </summary>
+            <param name="values">
+            </param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.GetParameter(System.String)">
+            <summary>
+            Retrieve the parameter with the given name.
+            </summary>
+            <param name="parameterName">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.Add(System.Object)">
+            <summary>
+            Adds the specified <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object to the <see cref="T:MySql.Data.MySqlClient.MySqlParameterCollection" />.
+            </summary>
+            <param name="value">The <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> to add to the collection.</param>
+            <returns>The index of the new <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.Clear">
+            <summary>
+            Removes all items from the collection.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.Contains(System.String)">
+            <summary>
+            Gets a value indicating whether a <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> with the specified parameter name exists in the collection.
+            </summary>
+            <param name="parameterName">The name of the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object to find.</param>
+            <returns>true if the collection contains the parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.Contains(System.Object)">
+            <summary>
+            Gets a value indicating whether a MySqlParameter exists in the collection.
+            </summary>
+            <param name="value">The value of the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object to find. </param>
+            <returns>true if the collection contains the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object; otherwise, false.</returns>
+            <overloads>Gets a value indicating whether a <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> exists in the collection.</overloads>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies MySqlParameter objects from the MySqlParameterCollection to the specified array.
+            </summary>
+            <param name="array">
+            </param>
+            <param name="index">
+            </param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the <see cref="T:MySql.Data.MySqlClient.MySqlParameterCollection" />.
+            </summary>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.IndexOf(System.String)">
+            <summary>
+            Gets the location of the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> in the collection with a specific parameter name.
+            </summary>
+            <param name="parameterName">The name of the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object to retrieve. </param>
+            <returns>The zero-based location of the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> in the collection.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.IndexOf(System.Object)">
+            <summary>
+            Gets the location of a <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> in the collection.
+            </summary>
+            <param name="value">The <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object to locate. </param>
+            <returns>The zero-based location of the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> in the collection.</returns>
+            <overloads>Gets the location of a <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> in the collection.</overloads>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.Insert(System.Int32,System.Object)">
+            <summary>
+            Inserts a MySqlParameter into the collection at the specified index.
+            </summary>
+            <param name="index">
+            </param>
+            <param name="value">
+            </param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.Remove(System.Object)">
+            <summary>
+            Removes the specified MySqlParameter from the collection.
+            </summary>
+            <param name="value">
+            </param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.RemoveAt(System.String)">
+            <summary>
+            Removes the specified <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> from the collection using the parameter name.
+            </summary>
+            <param name="parameterName">The name of the <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> object to retrieve. </param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlParameterCollection.RemoveAt(System.Int32)">
+            <summary>
+            Removes the specified <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> from the collection using a specific index.
+            </summary>
+            <param name="index">The zero-based index of the parameter. </param>
+            <overloads>Removes the specified <see cref="T:MySql.Data.MySqlClient.MySqlParameter" /> from the collection.</overloads>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.PreparableStatement">
+            <summary>
+            Summary description for PreparedStatement.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.PreparableStatement.PrepareCommandText(System.String@)">
+            <summary>
+            Prepares CommandText for use with the Prepare method
+            </summary>
+            <returns>Command text stripped of all paramter names</returns>
+            <remarks>
+            Takes the output of TokenizeSql and creates a single string of SQL
+            that only contains '?' markers for each parameter.  It also creates
+            the parameterMap array list that includes all the paramter names in the
+            order they appeared in the SQL
+            </remarks>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.SchemaProvider.GetForeignKeysOnTable(System.Data.DataTable,System.Data.DataRow,System.String,System.Boolean)">
+            <summary>
+            GetForeignKeysOnTable retrieves the foreign keys on the given table.
+            Since MySQL supports foreign keys on versions prior to 5.0, we can't  use
+            information schema.  MySQL also does not include any type of SHOW command
+            for foreign keys so we have to resort to use SHOW CREATE TABLE and parsing
+            the output.
+            </summary>
+            <param name="fkTable">The table to store the key info in.</param>
+            <param name="tableToParse">The table to get the foeign key info for.</param>
+            <param name="filterName">Only get foreign keys that match this name.</param>
+            <param name="includeColumns">Should column information be included in the table.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Statement.ShouldIgnoreMissingParameter(System.String)">
+            <summary>
+            We use a separate method here because we want to support using parameter
+            names with and without a leading marker but we don't want the indexing
+            methods of MySqlParameterCollection to support that.
+            </summary>
+            <param name="parameters">
+            </param>
+            <param name="name">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Statement.SerializeParameter(MySql.Data.MySqlClient.MySqlParameterCollection,MySql.Data.MySqlClient.MySqlStream,System.String)">
+            <summary>
+            Serializes the given parameter to the given memory stream
+            </summary>
+            <remarks>
+                <para>This method is called by PrepareSqlBuffers to convert the given
+            parameter to bytes and write those bytes to the given memory stream.
+            </para>
+            </remarks>
+            <returns>True if the parameter was successfully serialized, false otherwise.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Statement.TokenizeSql2(System.String)">
+            <summary>
+            THis code is not used yet but will likely be used in the future.
+            </summary>
+            <param name="sql">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Statement.TokenizeSql(System.String)">
+            <summary>
+            Breaks the given SQL up into 'tokens' that are easier to output
+            into another form (bytes, preparedText, etc).
+            </summary>
+            <param name="sql">SQL to be tokenized</param>
+            <returns>Array of tokens</returns>
+            <remarks>The SQL is tokenized at parameter markers ('?') and at
+            (';') sql end markers if the server doesn't support batching.
+            </remarks>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.StoredProcedure">
+            <summary>
+            Summary description for StoredProcedure.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlTransaction">
+            <!-- Badly formed XML in at comment file `docs/MySqlTransaction.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlTransaction.xml" path="docs/Class/*" />
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlTransaction.Connection">
+            <summary>
+            Gets the <see cref="T:MySql.Data.MySqlClient.MySqlConnection" /> object associated with the transaction, or a null reference (Nothing in Visual Basic) if the transaction is no longer valid.
+            </summary>
+            <value>The <see cref="T:MySql.Data.MySqlClient.MySqlConnection" /> object associated with this transaction.</value>
+            <remarks>
+            A single application may have multiple database connections, each
+            with zero or more transactions. This property enables you to
+            determine the connection object associated with a particular
+            transaction created by <see cref="M:MySql.Data.MySqlClient.MySqlConnection.BeginTransaction" />.
+            </remarks>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlTransaction.IsolationLevel">
+            <summary>
+            Specifies the <see cref="T:System.Data.IsolationLevel" /> for this transaction.
+            </summary>
+            <value>
+            The <see cref="T:System.Data.IsolationLevel" /> for this transaction. The default is <b>ReadCommitted</b>.
+            </value>
+            <remarks>
+            Parallel transactions are not supported. Therefore, the IsolationLevel
+            applies to the entire transaction.
+            </remarks>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlTransaction.Commit">
+            <!-- Badly formed XML in at comment file `docs/MySqlTransaction.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlTransaction.xml" path="docs/Commit/*" />
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlTransaction.Rollback">
+            <!-- Badly formed XML in at comment file `docs/MySqlTransaction.xml': cannot be included -->
+            <!-- No matching elements were found for the include tag embedded here. -->
+            <include file="docs/MySqlTransaction.xml" path="docs/Rollback/*" />
+        </member>
+        <member name="T:MySql.Data.Types.MySqlBit">
+            <summary>
+            Summary description for MySqlUInt64.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.Types.MySqlConversionException">
+            <summary>
+            Summary description for MySqlConversionException.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Types.MySqlConversionException.#ctor(System.String)">
+            <summary>Ctor</summary>
+        </member>
+        <member name="T:MySql.Data.Types.MySqlDateTime">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Types.MySqlDateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Constructs a new <b>MySqlDateTime</b> object by setting the individual time properties to
+            the given values.
+            </summary>
+            <param name="year">The year to use.</param>
+            <param name="month">The month to use.</param>
+            <param name="day">The day to use.</param>
+            <param name="hour">The hour to use.</param>
+            <param name="minute">The minute to use.</param>
+            <param name="second">The second to use.</param>
+        </member>
+        <member name="M:MySql.Data.Types.MySqlDateTime.#ctor(System.DateTime)">
+            <summary>
+            Constructs a new <b>MySqlDateTime</b> object by using values from the given <see cref="T:System.DateTime" /> object.
+            </summary>
+            <param name="dt">The <see cref="T:System.DateTime" /> object to copy.</param>
+        </member>
+        <member name="M:MySql.Data.Types.MySqlDateTime.#ctor(MySql.Data.Types.MySqlDateTime)">
+            <summary>
+            Constructs a new <b>MySqlDateTime</b> object by copying the current value of the given object.
+            </summary>
+            <param name="mdt">The <b>MySqlDateTime</b> object to copy.</param>
+        </member>
+        <member name="M:MySql.Data.Types.MySqlDateTime.#ctor(System.String)">
+            <summary>
+            Enables the contruction of a <b>MySqlDateTime</b> object by parsing a string.
+            </summary>
+            <param name="s">
+            </param>
+        </member>
+        <member name="P:MySql.Data.Types.MySqlDateTime.IsValidDateTime">
+            <summary>
+            Indicates if this object contains a value that can be represented as a DateTime
+            </summary>
+        </member>
+        <member name="P:MySql.Data.Types.MySqlDateTime.Year">
+            <summary>Returns the year portion of this datetime</summary>
+        </member>
+        <member name="P:MySql.Data.Types.MySqlDateTime.Month">
+            <summary>Returns the month portion of this datetime</summary>
+        </member>
+        <member name="P:MySql.Data.Types.MySqlDateTime.Day">
+            <summary>Returns the day portion of this datetime</summary>
+        </member>
+        <member name="P:MySql.Data.Types.MySqlDateTime.Hour">
+            <summary>Returns the hour portion of this datetime</summary>
+        </member>
+        <member name="P:MySql.Data.Types.MySqlDateTime.Minute">
+            <summary>Returns the minute portion of this datetime</summary>
+        </member>
+        <member name="P:MySql.Data.Types.MySqlDateTime.Second">
+            <summary>Returns the second portion of this datetime</summary>
+        </member>
+        <member name="P:MySql.Data.Types.MySqlDateTime.Millisecond">
+            <summary>
+            Retrieves the millisecond value of this object.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.Types.MySqlDateTime.IsNull">
+            <summary>
+            Returns true if this datetime object has a null value
+            </summary>
+        </member>
+        <member name="P:MySql.Data.Types.MySqlDateTime.Value">
+            <summary>
+            Retrieves the value of this <see cref="T:MySql.Data.Types.MySqlDateTime" /> as a DateTime object.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Types.MySqlDateTime.GetDateTime">
+            <summary>Returns this value as a DateTime</summary>
+        </member>
+        <member name="M:MySql.Data.Types.MySqlDateTime.ToString">
+            <summary>Returns a MySQL specific string representation of this value</summary>
+        </member>
+        <member name="M:MySql.Data.Types.MySqlDateTime.op_Explicit(MySql.Data.Types.MySqlDateTime)~System.DateTime">
+            <summary>
+            </summary>
+            <param name="val">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:zlib.SupportClass.Identity(System.Int64)">
+            <summary>
+            This method returns the literal value received
+            </summary>
+            <param name="literal">The literal to return</param>
+            <returns>The received value</returns>
+        </member>
+        <member name="M:zlib.SupportClass.Identity(System.UInt64)">
+            <summary>
+            This method returns the literal value received
+            </summary>
+            <param name="literal">The literal to return</param>
+            <returns>The received value</returns>
+        </member>
+        <member name="M:zlib.SupportClass.Identity(System.Single)">
+            <summary>
+            This method returns the literal value received
+            </summary>
+            <param name="literal">The literal to return</param>
+            <returns>The received value</returns>
+        </member>
+        <member name="M:zlib.SupportClass.Identity(System.Double)">
+            <summary>
+            This method returns the literal value received
+            </summary>
+            <param name="literal">The literal to return</param>
+            <returns>The received value</returns>
+        </member>
+        <member name="M:zlib.SupportClass.URShift(System.Int32,System.Int32)">
+            ***************************<summary>
+            Performs an unsigned bitwise right shift with the specified number
+            </summary><param name="number">Number to operate on</param><param name="bits">Ammount of bits to shift</param><returns>The resulting number from the shift operation</returns></member>
+        <member name="M:zlib.SupportClass.URShift(System.Int32,System.Int64)">
+            <summary>
+            Performs an unsigned bitwise right shift with the specified number
+            </summary>
+            <param name="number">Number to operate on</param>
+            <param name="bits">Ammount of bits to shift</param>
+            <returns>The resulting number from the shift operation</returns>
+        </member>
+        <member name="M:zlib.SupportClass.URShift(System.Int64,System.Int32)">
+            <summary>
+            Performs an unsigned bitwise right shift with the specified number
+            </summary>
+            <param name="number">Number to operate on</param>
+            <param name="bits">Ammount of bits to shift</param>
+            <returns>The resulting number from the shift operation</returns>
+        </member>
+        <member name="M:zlib.SupportClass.URShift(System.Int64,System.Int64)">
+            <summary>
+            Performs an unsigned bitwise right shift with the specified number
+            </summary>
+            <param name="number">Number to operate on</param>
+            <param name="bits">Ammount of bits to shift</param>
+            <returns>The resulting number from the shift operation</returns>
+        </member>
+        <member name="M:zlib.SupportClass.ReadInput(System.IO.Stream,System.Byte[],System.Int32,System.Int32)">
+            ***************************<summary>Reads a number of characters from the current source Stream and writes the data to the target array at the specified index.</summary><param name="sourceStream">The source Stream to read from.</param><param name="target">Contains the array of characteres read from the source Stream.</param><param name="start">The starting index of the target array.</param><param name="count">The maximum number of characters to read from the source Stream.</param><returns>The number of characters read. The number will be less than or equal to count depending on the data available in the source Stream. Returns -1 if the end of the stream is reached.</returns></member>
+        <member name="M:zlib.SupportClass.ReadInput(System.IO.TextReader,System.Byte[],System.Int32,System.Int32)">
+            <summary>Reads a number of characters from the current source TextReader and writes the data to the target array at the specified index.</summary>
+            <param name="sourceTextReader">The source TextReader to read from</param>
+            <param name="target">Contains the array of characteres read from the source TextReader.</param>
+            <param name="start">The starting index of the target array.</param>
+            <param name="count">The maximum number of characters to read from the source TextReader.</param>
+            <returns>The number of characters read. The number will be less than or equal to count depending on the data available in the source TextReader. Returns -1 if the end of the stream is reached.</returns>
+        </member>
+        <member name="M:zlib.SupportClass.ToByteArray(System.String)">
+            <summary>
+            Converts a string to an array of bytes
+            </summary>
+            <param name="sourceString">The string to be converted</param>
+            <returns>The new array of bytes</returns>
+        </member>
+        <member name="M:zlib.SupportClass.ToCharArray(System.Byte[])">
+            <summary>
+            Converts an array of bytes to an array of chars
+            </summary>
+            <param name="byteArray">The array of bytes to convert</param>
+            <returns>The new array of chars</returns>
+        </member>
+        <member name="M:zlib.SupportClass.Serialize(System.IO.Stream,System.Object)">
+            ***************************<summary>
+            Writes an object to the specified Stream
+            </summary><param name="stream">The target Stream</param><param name="objectToSend">The object to be sent</param></member>
+        <member name="M:zlib.SupportClass.Serialize(System.IO.BinaryWriter,System.Object)">
+            <summary>
+            Writes an object to the specified BinaryWriter
+            </summary>
+            <param name="binaryWriter">The target BinaryWriter</param>
+            <param name="objectToSend">The object to be sent</param>
+        </member>
+        <member name="M:zlib.SupportClass.Deserialize(System.IO.BinaryReader)">
+            ***************************<summary>
+            Deserializes an object, or an entire graph of connected objects, and returns the object intance
+            </summary><param name="binaryReader">Reader instance used to read the object</param><returns>The object instance</returns></member>
+        <member name="M:zlib.SupportClass.WriteStackTrace(System.Exception,System.IO.TextWriter)">
+            ***************************<summary>
+            Writes the exception stack trace to the received stream
+            </summary><param name="throwable">Exception to obtain information from</param><param name="stream">Output sream used to write to</param></member>
+        <member name="P:zlib.ZInputStream.TotalIn">
+            <summary> Returns the total number of bytes input so far.</summary>
+        </member>
+        <member name="P:zlib.ZInputStream.TotalOut">
+            <summary> Returns the total number of bytes output so far.</summary>
+        </member>
+        <member name="P:zlib.ZOutputStream.TotalIn">
+            <summary> Returns the total number of bytes input so far.</summary>
+        </member>
+        <member name="P:zlib.ZOutputStream.TotalOut">
+            <summary> Returns the total number of bytes output so far.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Resources">
+            <summary>
+            A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ResourceManager">
+            <summary>
+            Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.Culture">
+            <summary>
+            Overrides the current thread's CurrentUICulture property for all
+            resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.AdapterIsNull">
+            <summary>
+            Looks up a localized string similar to Improper MySqlCommandBuilder state: adapter is null.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.AdapterSelectIsNull">
+            <summary>
+            Looks up a localized string similar to Improper MySqlCommandBuilder state: adapter's SelectCommand is null.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.BadVersionFormat">
+            <summary>
+            Looks up a localized string similar to Version string not in acceptable format.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.BufferCannotBeNull">
+            <summary>
+            Looks up a localized string similar to  The buffer cannot be null.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.BufferNotLargeEnough">
+            <summary>
+            Looks up a localized string similar to  Buffer is not large enough.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.CancelNeeds50">
+            <summary>
+            Looks up a localized string similar to Canceling an executing query requires MySQL 5.0 or higher..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.CancelNotSupported">
+            <summary>
+            Looks up a localized string similar to Canceling an active query is only supported on MySQL 5.0.0 and above. .
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.CBMultiTableNotSupported">
+            <summary>
+            Looks up a localized string similar to MySqlCommandBuilder does not support multi-table statements.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.CBNoKeyColumn">
+            <summary>
+            Looks up a localized string similar to MySqlCommandBuilder cannot operate on tables with no unique or key columns.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ChaosNotSupported">
+            <summary>
+            Looks up a localized string similar to Chaos isolation level is not supported.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.CommandTextNotInitialized">
+            <summary>
+            Looks up a localized string similar to The CommandText property has not been properly initialized..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ConnectionAlreadyOpen">
+            <summary>
+            Looks up a localized string similar to The connection is already open..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ConnectionBroken">
+            <summary>
+            Looks up a localized string similar to Connection unexpectedly terminated..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ConnectionMustBeOpen">
+            <summary>
+            Looks up a localized string similar to Connection must be valid and open.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ConnectionNotOpen">
+            <summary>
+            Looks up a localized string similar to The connection is not open..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ConnectionNotSet">
+            <summary>
+            Looks up a localized string similar to The connection property has not been set..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.CountCannotBeNegative">
+            <summary>
+            Looks up a localized string similar to  Count cannot be negative.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.CSNoSetLength">
+            <summary>
+            Looks up a localized string similar to SetLength is not a valid operation on CompressedStream.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.DataReaderOpen">
+            <summary>
+            Looks up a localized string similar to There is already an open DataReader associated with this Connection which must be closed first..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ErrorCreatingSocket">
+            <summary>
+            Looks up a localized string similar to Error creating socket connection.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.FromAndLengthTooBig">
+            <summary>
+            Looks up a localized string similar to From index and length use more bytes than from contains.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.FromIndexMustBeValid">
+            <summary>
+            Looks up a localized string similar to From index must be a valid index inside the from buffer.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.HardProcQuery">
+            <summary>
+            Looks up a localized string similar to Retrieving procedure metadata for {0} from server..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ImproperValueFormat">
+            <summary>
+            Looks up a localized string similar to Value has an unsupported format..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.IncorrectTransmission">
+            <summary>
+            Looks up a localized string similar to An incorrect response was received from the server..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.IndexAndLengthTooBig">
+            <summary>
+            Looks up a localized string similar to Index and length use more bytes than to has room for.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.IndexMustBeValid">
+            <summary>
+            Looks up a localized string similar to Index must be a valid position in the buffer.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.InvalidProcName">
+            <summary>
+            Looks up a localized string similar to Procedure or function '{0}' cannot be found in database '{1}'..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.KeywordNoNull">
+            <summary>
+            Looks up a localized string similar to Keyword does not allow null values..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.KeywordNotSupported">
+            <summary>
+            Looks up a localized string similar to Keyword not supported..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.MixingUpdatedRowSource">
+            <summary>
+            Looks up a localized string similar to When MySqlCommandBuilder.ReturnGeneratedIdentifiers is true, MySqlCommand.UpdatedRowSource must be set to None..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.NamedPipeNoSeek">
+            <summary>
+            Looks up a localized string similar to NamedPipeStream does not support seeking.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.NamedPipeNoSetLength">
+            <summary>
+            Looks up a localized string similar to NamedPipeStream doesn't support SetLength.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.NextResultIsClosed">
+            <summary>
+            Looks up a localized string similar to Invalid attempt to call NextResult when the reader is closed..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.NoBodiesAndTypeNotSet">
+            <summary>
+            Looks up a localized string similar to When calling stored procedures and 'Use Procedure Bodies' is false, all parameters must have their type explicitly set..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.NoNestedTransactions">
+            <summary>
+            Looks up a localized string similar to Nested transactions are not supported..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.OffsetCannotBeNegative">
+            <summary>
+            Looks up a localized string similar to  Offset cannot be negative.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.OffsetMustBeValid">
+            <summary>
+            Looks up a localized string similar to Offset must be a valid position in buffer.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ParameterAlreadyDefined">
+            <summary>
+            Looks up a localized string similar to Parameter '{0}' has already been defined..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ParameterCannotBeNegative">
+            <summary>
+            Looks up a localized string similar to Parameter cannot have a negative value.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ParameterCannotBeNull">
+            <summary>
+            Looks up a localized string similar to Parameter cannot be null.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ParameterIsInvalid">
+            <summary>
+            Looks up a localized string similar to Parameter is invalid..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ParameterMustBeDefined">
+            <summary>
+            Looks up a localized string similar to Parameter '{0}' must be defined..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.PasswordMustHaveLegalChars">
+            <summary>
+            Looks up a localized string similar to Password must be valid and contain length characters.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.PerfMonCategoryHelp">
+            <summary>
+            Looks up a localized string similar to This category includes a series of counters for MySQL..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.PerfMonCategoryName">
+            <summary>
+            Looks up a localized string similar to .NET Data Provider for MySQL.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.PerfMonHardProcHelp">
+            <summary>
+            Looks up a localized string similar to The number of times a procedures metadata had to be queried from the server..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.PerfMonHardProcName">
+            <summary>
+            Looks up a localized string similar to Hard Procedure Queries.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.PerfMonSoftProcHelp">
+            <summary>
+            Looks up a localized string similar to The number of times a procedures metadata was retrieved from the client-side cache..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.PerfMonSoftProcName">
+            <summary>
+            Looks up a localized string similar to Soft Procedure Queries.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ProcAndFuncSameName">
+            <summary>
+            Looks up a localized string similar to same name are not supported..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.QueryTooLarge">
+            <summary>
+            Looks up a localized string similar to Packets larger than max_allowed_packet are not allowed..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.ReadFromStreamFailed">
+            <summary>
+            Looks up a localized string similar to Reading from the stream has failed..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.SocketNoSeek">
+            <summary>
+            Looks up a localized string similar to Socket streams do not support seeking.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.SoftProcQuery">
+            <summary>
+            Looks up a localized string similar to Retrieving procedure metadata for {0} from procedure cache..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.SPNotSupported">
+            <summary>
+            Looks up a localized string similar to Stored procedures are not supported on this version of MySQL.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.StreamAlreadyClosed">
+            <summary>
+            Looks up a localized string similar to The stream has already been closed.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.StreamNoRead">
+            <summary>
+            Looks up a localized string similar to  The stream does not support reading.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.StreamNoWrite">
+            <summary>
+            Looks up a localized string similar to The stream does not support writing.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.Timeout">
+            <summary>
+            Looks up a localized string similar to Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.TimeoutGettingConnection">
+            <summary>
+            Looks up a localized string similar to error connecting: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.UnableToConnectToHost">
+            <summary>
+            Looks up a localized string similar to Unable to connect to any of the specified MySQL hosts..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.UnableToExecuteSP">
+            <summary>
+            Looks up a localized string similar to Unable to execute stored procedure '{0}'..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.UnableToParseFK">
+            <summary>
+            Looks up a localized string similar to There was an error parsing the foreign key definition..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.UnableToRetrieveSProcData">
+            <summary>
+            Looks up a localized string similar to Unable to retrieve stored procedure metadata.  Either grant  SELECTprivilege to mysql.proc for this user or use "use procedure bodies=false" with  your connection string..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.UnixSocketsNotSupported">
+            <summary>
+            Looks up a localized string similar to Unix sockets are not supported on Windows.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.WriteToStreamFailed">
+            <summary>
+            Looks up a localized string similar to Writing to the stream failed..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Resources.WrongParameterName">
+            <summary>
+            Looks up a localized string similar to Parameter '{0}' is not found but a parameter with the name '{1}' is found. Parameter names must include the leading parameter marker..
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlBulkLoader">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.Connection">
+            <summary>
+            Gets or sets the connection.
+            </summary>
+            <value>The connection.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.FieldTerminator">
+            <summary>
+            Gets or sets the field terminator.
+            </summary>
+            <value>The field terminator.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.LineTerminator">
+            <summary>
+            Gets or sets the line terminator.
+            </summary>
+            <value>The line terminator.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.TableName">
+            <summary>
+            Gets or sets the name of the table.
+            </summary>
+            <value>The name of the table.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.CharacterSet">
+            <summary>
+            Gets or sets the character set.
+            </summary>
+            <value>The character set.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.FileName">
+            <summary>
+            Gets or sets the name of the file.
+            </summary>
+            <value>The name of the file.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.Timeout">
+            <summary>
+            Gets or sets the timeout.
+            </summary>
+            <value>The timeout.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.Local">
+            <summary>
+            Gets or sets a value indicating whether the filename that is to be loaded
+            is local to the client or not
+            </summary>
+            <value>
+                <c>true</c> if local; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.NumberOfLinesToSkip">
+            <summary>
+            Gets or sets the number of lines to skip.
+            </summary>
+            <value>The number of lines to skip.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.LinePrefix">
+            <summary>
+            Gets or sets the line prefix.
+            </summary>
+            <value>The line prefix.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.FieldQuotationCharacter">
+            <summary>
+            Gets or sets the field quotation character.
+            </summary>
+            <value>The field quotation character.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.FieldQuotationOptional">
+            <summary>
+            Gets or sets a value indicating whether [field quotation optional].
+            </summary>
+            <value>
+                <c>true</c> if [field quotation optional]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.EscapeCharacter">
+            <summary>
+            Gets or sets the escape character.
+            </summary>
+            <value>The escape character.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.ConflictOption">
+            <summary>
+            Gets or sets the conflict option.
+            </summary>
+            <value>The conflict option.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.Priority">
+            <summary>
+            Gets or sets the priority.
+            </summary>
+            <value>The priority.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.Columns">
+            <summary>
+            Gets the columns.
+            </summary>
+            <value>The columns.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlBulkLoader.Expressions">
+            <summary>
+            Gets the expressions.
+            </summary>
+            <value>The expressions.</value>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlBulkLoader.Load">
+            <summary>
+            Execute the load operation
+            </summary>
+            <returns>The number of rows inserted.</returns>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlBulkLoaderPriority">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlBulkLoaderPriority.None">
+            <summary>
+            This is the default and indicates normal priority
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlBulkLoaderPriority.Low">
+            <summary>
+            Low priority will cause the load operation to wait until all readers of the table
+            have finished.  This only affects storage engines that use only table-level locking
+            such as MyISAM, Memory, and Merge.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlBulkLoaderPriority.Concurrent">
+            <summary>
+            Concurrent priority is only relevant for MyISAM tables and signals that if the table
+            has no free blocks in the middle that other readers can retrieve data from the table
+            while the load operation is happening.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlBulkLoaderConflictOption">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlBulkLoaderConflictOption.None">
+            <summary>
+            This is the default and indicates normal operation.  In the event of a LOCAL load, this
+            is the same as ignore.  When the data file is on the server, then a key conflict will
+            cause an error to be thrown and the rest of the data file ignored.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlBulkLoaderConflictOption.Replace">
+            <summary>
+            Replace column values when a key conflict occurs.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlBulkLoaderConflictOption.Ignore">
+            <summary>
+            Ignore any rows where the primary key conflicts.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlScript">
+            <summary>
+            Provides a class capable of executing a SQL script containing
+            multiple SQL statements including CREATE PROCEDURE statements
+            that require changing the delimiter
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlScript.#ctor">
+            <summary>
+            Initializes a new instance of the
+            <see cref="T:MySql.Data.MySqlClient.MySqlScript" /> class.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlScript.#ctor(MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            Initializes a new instance of the
+            <see cref="T:MySql.Data.MySqlClient.MySqlScript" /> class.
+            </summary>
+            <param name="connection">The connection.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlScript.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the
+            <see cref="T:MySql.Data.MySqlClient.MySqlScript" /> class.
+            </summary>
+            <param name="query">The query.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlScript.#ctor(MySql.Data.MySqlClient.MySqlConnection,System.String)">
+            <summary>
+            Initializes a new instance of the
+            <see cref="T:MySql.Data.MySqlClient.MySqlScript" /> class.
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="query">The query.</param>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlScript.Connection">
+            <summary>
+            Gets or sets the connection.
+            </summary>
+            <value>The connection.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlScript.Query">
+            <summary>
+            Gets or sets the query.
+            </summary>
+            <value>The query.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlScript.Delimiter">
+            <summary>
+            Gets or sets the delimiter.
+            </summary>
+            <value>The delimiter.</value>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlScript.Execute">
+            <summary>
+            Executes this instance.
+            </summary>
+            <returns>The number of statements executed as part of the script.</returns>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlScriptEventArgs">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlScriptEventArgs.StatementText">
+            <summary>
+            Gets the statement text.
+            </summary>
+            <value>The statement text.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlScriptEventArgs.Line">
+            <summary>
+            Gets the line.
+            </summary>
+            <value>The line.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlScriptEventArgs.Position">
+            <summary>
+            Gets the position.
+            </summary>
+            <value>The position.</value>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlScriptErrorEventArgs">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.MySqlScriptErrorEventArgs.#ctor(System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MySql.Data.MySqlClient.MySqlScriptErrorEventArgs" /> class.
+            </summary>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlScriptErrorEventArgs.Exception">
+            <summary>
+            Gets the exception.
+            </summary>
+            <value>The exception.</value>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.MySqlScriptErrorEventArgs.Ignore">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:MySql.Data.MySqlClient.MySqlScriptErrorEventArgs" /> is ignore.
+            </summary>
+            <value>
+                <c>true</c> if ignore; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlInfoMessageEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:MySql.Data.MySqlClient.MySqlConnection.InfoMessage" /> event of a
+            <see cref="T:MySql.Data.MySqlClient.MySqlConnection" />.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlRowUpdatingEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:MySql.Data.MySqlClient.MySqlDataAdapter.RowUpdating" /> event of a <see cref="T:MySql.Data.MySqlClient.MySqlDataAdapter" />.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlRowUpdatedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:MySql.Data.MySqlClient.MySqlDataAdapter.RowUpdated" /> event of a <see cref="T:MySql.Data.MySqlClient.MySqlDataAdapter" />.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlStatementExecutedEventHandler">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.MySqlScriptErrorEventHandler">
+            <summary>
+            </summary>
+        </member>
+    </members>
+</doc>

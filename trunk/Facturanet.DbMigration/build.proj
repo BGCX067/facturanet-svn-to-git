@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ClassLibraryOutputDirectory>$(MSBuildProjectDirectory)\bin\</ClassLibraryOutputDirectory>
+    <MigratorTasksPath>$(MSBuildProjectDirectory)\bin\</MigratorTasksPath>
+    <MigrationsProject>$(MSBuildProjectDirectory)\Facturanet.DbMigration.csproj</MigrationsProject>
+    <MigratorTasksLib>$(MigratorTasksPath)\Migrator.MSBuild.dll</MigratorTasksLib>
+  </PropertyGroup>
+
+
+  <Target Name="BuildMigrations">
+    <MSBuild Projects="$(MigrationsProject)" Targets="Clean">
+      <Output TaskParameter="TargetOutputs" ItemName="MigrationAssemblies" />
+    </MSBuild>
+    <MSBuild Projects="$(MigrationsProject)" Targets="Build">
+      <Output TaskParameter="TargetOutputs" ItemName="MigrationAssemblies" />
+    </MSBuild>
+    <Message Text="Built: @(MigrationAssemblies)"/>
+  </Target>
+
+  <UsingTask AssemblyFile="$(MigratorTasksLib)" TaskName="Migrator.MSBuild.Migrate" />
+
+  <Target Name="Migrate" DependsOnTargets="BuildMigrations">
+    <Message Text="Migrating: @(MigrationAssemblies)"/>
+    <CreateProperty Value="-1"  Condition="'$(SchemaVersion)'==''">
+      <Output TaskParameter="Value" PropertyName="SchemaVersion"/>
+    </CreateProperty>
+
+    <Migrate Provider="SqlServer"
+            Connectionstring="Server=XPVIRTUAL\SQLEXPRESS;Database=Facturanet;Integrated Security=True"
+            Migrations="bin/Facturanet.DbMigration.dll"
+            To="$(SchemaVersion)"/>
+
+    <!--
+    
+    <Migrate Provider="MySql"
+            Connectionstring="Database=PruebasAndres;Data Source=servidor;User=root"
+            Migrations="bin/Facturanet.DbMigration.dll"
+            To="$(SchemaVersion)"/>
+
+    
+    <Migrate Provider="SqlServer"
+            Connectionstring="Server=XPVIRTUAL\SQLEXPRESS;Database=PruebasAndres;Integrated Security=True"
+            Migrations="bin/Facturanet.DbMigration.dll"
+            To="$(SchemaVersion)"/>
+    -->
+  </Target>
+  
+</Project>

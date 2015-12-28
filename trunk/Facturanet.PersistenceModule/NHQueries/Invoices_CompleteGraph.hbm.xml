@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <query name="Invoices_CompleteGraph" read-only="true">
+    <![CDATA[
+    from Invoice invoice 
+    left join fetch invoice.Customer
+    left join fetch invoice.Enterprise
+    left join fetch invoice.Items items
+    left join fetch items.Product
+    ]]>
+  </query>
+
+</hibernate-mapping>

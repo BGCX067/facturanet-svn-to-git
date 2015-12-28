@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Facturanet.Server;
+using System.Runtime.Serialization;
+
+namespace Facturanet.Business
+{
+    [DataContract]
+    public class CreateAccountTreeRequest : BaseRequest<EmptyResponse>
+    {
+        [DataMember]
+        public Entities.AccountTree AccountTree { get; set; }
+
+        public CreateAccountTreeRequest(Entities.AccountTree accountTree)
+        {
+            AccountTree = accountTree;
+        }
+    }
+}

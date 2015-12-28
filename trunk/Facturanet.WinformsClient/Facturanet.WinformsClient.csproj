@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{730F38C7-A6D1-47C6-A4C7-BC80489DF7B0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Facturanet.WinformsClient</RootNamespace>
+    <AssemblyName>Facturanet.WinformsClient</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AccountTreeListItemTreenode.cs" />
+    <Compile Include="Controls\AccountTreesTreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AccountTreesTreeView.Designer.cs">
+      <DependentUpon>AccountTreesTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ContableAccountEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ContableAccountEditor.Designer.cs">
+      <DependentUpon>ContableAccountEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ContableAccountTreenode.cs" />
+    <Compile Include="Util\DataObjectExtensions.cs" />
+    <Compile Include="Util\TreeNodeExtensions.cs" />
+    <Compile Include="Util\FacturanetTreenode.cs">
+    </Compile>
+    <Compile Include="Util\BindingSourceExtensions.cs" />
+    <Compile Include="Controls\AccountTreeListItemEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AccountTreeListItemEditor.Designer.cs">
+      <DependentUpon>AccountTreeListItemEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\FacturanetEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Util\FacturanetBindingNavigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AccountTreeEdition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountTreeEdition.Designer.cs">
+      <DependentUpon>AccountTreeEdition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AccountTreesABM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountTreesABM.Designer.cs">
+      <DependentUpon>AccountTreesABM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ContableConfigurationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ContableConfigurationsForm.Designer.cs">
+      <DependentUpon>ContableConfigurationsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\AccountTreeListItemEditor.resx">
+      <DependentUpon>AccountTreeListItemEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AccountTreesTreeView.resx">
+      <DependentUpon>AccountTreesTreeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ContableAccountEditor.resx">
+      <DependentUpon>ContableAccountEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AccountTreeEdition.resx">
+      <DependentUpon>AccountTreeEdition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AccountTreesABM.resx">
+      <DependentUpon>AccountTreesABM.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ContableConfigurationsForm.resx">
+      <DependentUpon>ContableConfigurationsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\Facturanet.DTOs.InvoicesListItem.datasource" />
+    <None Include="Properties\DataSources\Facturanet.Entities.AccountTree.datasource" />
+    <None Include="Properties\DataSources\Facturanet.Entities.ContableConfiguration.datasource" />
+    <None Include="Properties\DataSources\Facturanet.UI.AccountTreesListItem.datasource" />
+    <None Include="Properties\DataSources\Facturanet.UI.ContableAccount.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\facturanet.core\Facturanet.Core.csproj">
+      <Project>{2DC4D020-007B-41EC-99B0-8C5EA9FB7AA3}</Project>
+      <Name>Facturanet.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Facturanet.PersistenceModule\Facturanet.PersistenceModule.csproj">
+      <Project>{6B6A1166-01BA-40E0-B349-04FC97B9A8A2}</Project>
+      <Name>Facturanet.PersistenceModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Facturanet.TestModule\Facturanet.TestModule.csproj">
+      <Project>{3F2CB8F7-2FB7-47C9-A643-DFBF6CFCADE9}</Project>
+      <Name>Facturanet.TestModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Facturanet.WebserviceModule\Facturanet.WebserviceModule.csproj">
+      <Project>{57649907-4B8B-47F8-89E2-B8E7C6255FDB}</Project>
+      <Name>Facturanet.WebserviceModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

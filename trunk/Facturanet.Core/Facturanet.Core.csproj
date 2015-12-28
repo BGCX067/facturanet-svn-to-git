@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2DC4D020-007B-41EC-99B0-8C5EA9FB7AA3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Facturanet</RootNamespace>
+    <AssemblyName>facturanet.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Iesi.Collections, Version=1.0.0.3, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\UpdateCompleteAccountTreeRequest.cs" />
+    <Compile Include="Business\GetCompleteAccountTreeResponse.cs" />
+    <Compile Include="Business\GetCompleteAccountTreeRequest.cs" />
+    <Compile Include="Business\UpdateAccountTreeListRequest.cs" />
+    <Compile Include="Business\CreateAccountTreeRequest.cs" />
+    <Compile Include="Business\ListAccountTreesRequest.cs" />
+    <Compile Include="Business\ListAccountTreesResponse.cs" />
+    <Compile Include="Business\ListInvoicesRequest.cs" />
+    <Compile Include="Business\ListInvoicesResponse.cs" />
+    <Compile Include="Business\ListCustomersRequest.cs" />
+    <Compile Include="Business\ListCustomersResponse.cs" />
+    <Compile Include="Business\ListProductsRequest.cs" />
+    <Compile Include="Business\ListProductsResponse.cs" />
+    <Compile Include="UI\ContableAccount.cs" />
+    <Compile Include="UI\TreeOrderPair.cs" />
+    <Compile Include="Util\TypeExtensions.cs" />
+    <Compile Include="Validation\PropertyValidationResult.cs" />
+    <Compile Include="Validation\ValidationResultItem.cs" />
+    <Compile Include="Validation\ValidationResult.cs" />
+    <Compile Include="Validation\ValidationException.cs" />
+    <Compile Include="Validation\IValidable.cs" />
+    <Compile Include="UI\PropertyComparer.cs" />
+    <Compile Include="UI\ValueChangedDescriptor.cs" />
+    <Compile Include="UI\EditableUIObjectSupporter.cs" />
+    <Compile Include="UI\FacturanetBindingList.cs" />
+    <Compile Include="UI\UI_Interfaces.cs" />
+    <Compile Include="UI\UIObjectImplementationException.cs" />
+    <Compile Include="Entities\ContableAccount.cs" />
+    <Compile Include="Entities\ContableConfiguration.cs" />
+    <Compile Include="Entities\AccountTree.cs" />
+    <Compile Include="Entities\Enterprise.cs" />
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\Invoice.cs" />
+    <Compile Include="Entities\InvoiceItem.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Infrastructure\SystemInfoRequest.cs" />
+    <Compile Include="Infrastructure\SystemInfoResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server\EmptyResponse.cs" />
+    <Compile Include="Server\FacturanetProcessorFactory.cs" />
+    <Compile Include="Server\FacturanetService.cs" />
+    <Compile Include="Server\BaseRequest.cs" />
+    <Compile Include="Server\CompositeRequest.cs" />
+    <Compile Include="Server\CompositeResponse.cs" />
+    <Compile Include="Server\IContext.cs" />
+    <Compile Include="Server\IProcessor.cs" />
+    <Compile Include="Server\IProcessorFactory.cs" />
+    <Compile Include="Server\IService.cs" />
+    <Compile Include="Server\ListResponse.cs" />
+    <Compile Include="Server\Processor.cs" />
+    <Compile Include="Server\Request.cs" />
+    <Compile Include="Server\Response.cs" />
+    <Compile Include="Server\Selector.cs" />
+    <Compile Include="UI\AccountTreeListItem.cs" />
+    <Compile Include="UI\ProductsListItem.cs" />
+    <Compile Include="UI\CustomersListItem.cs" />
+    <Compile Include="UI\InvoicesListItem.cs" />
+    <Compile Include="Test\GenerateTestDataRequest.cs" />
+    <Compile Include="Test\GenerateTestDataResponse.cs" />
+    <Compile Include="Util\IdentifierHelper.cs" />
+    <Compile Include="Util\ObjectExtensions.cs" />
+    <Compile Include="Validation\ValidationResultBase.cs" />
+    <Compile Include="Validation\Level.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Application\" />
+    <Folder Include="Enterprise\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

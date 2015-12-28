@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5AEB1D8D-1B55-4348-A52F-53FB4293AECC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Facturanet.DbMigration</RootNamespace>
+    <AssemblyName>Facturanet.DbMigration</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="20010101\010110_AddEnterpriseTable.cs" />
+    <Compile Include="20010101\010140_AddInvoiceTable.cs" />
+    <Compile Include="20010101\010150_InsertTestData.cs" />
+    <Compile Include="20010101\010130_AddProductTable.cs" />
+    <Compile Include="20010101\010170_AddContableAccountTable.cs" />
+    <Compile Include="20010101\010160_AddAccountTreeTable.cs" />
+    <Compile Include="20010101\010120_AddCustomerTable.cs" />
+    <Compile Include="20010101\010180_AddContableConfigurationTable.cs" />
+    <Compile Include="20090128\181800_InsertAccountTreeTestData.cs" />
+    <Compile Include="20090314\133900_VersionFieldToEntitiesTables.cs" />
+    <Compile Include="20090319\192400_AddIsDeletedFieldToAccountTreeTable.cs" />
+    <Compile Include="20090320\170900_AddIsDeletedFieldToContableAccountTable.cs" />
+    <Compile Include="20090321\100300_ModifyIsDeletedFields.cs" />
+    <Compile Include="FacturanetMigration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build.proj">
+    </None>
+    <None Include="ToVersion.cmd" />
+    <None Include="Up.cmd" />
+    <None Include="Zero.cmd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\facturanet.core\Facturanet.Core.csproj">
+      <Project>{2DC4D020-007B-41EC-99B0-8C5EA9FB7AA3}</Project>
+      <Name>Facturanet.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lib\migratordotnet\src\Migrator.Framework\Migrator.Framework-vs2008.csproj">
+      <Project>{5270F048-E580-486C-B14C-E5B9F6E539D4}</Project>
+      <Name>Migrator.Framework-vs2008</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lib\migratordotnet\src\Migrator.MSBuild\Migrator.MSBuild-vs2008.csproj">
+      <Project>{A145FFA9-5FE6-4636-93B8-0C110D132BF3}</Project>
+      <Name>Migrator.MSBuild-vs2008</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lib\migratordotnet\src\Migrator\Migrator-vs2008.csproj">
+      <Project>{1FEE70A4-AAD7-4C60-BE60-3F7DC03A8C4D}</Project>
+      <Name>Migrator-vs2008</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
